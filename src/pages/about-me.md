@@ -4,7 +4,7 @@ title: "Izhatya Widad Audifa - Network Security Engineer"
 description: "Portofolio profesional Izhatya Widad Audifa, Network Security Engineer dengan pengalaman di data center, keamanan jaringan, dan sertifikasi Fortinet NSE 1-3, CCNA, dan Cyber Threat Management."
 author: "Izhatya Widad Audifa"
 image:
-  url: "/images/profile.jpg"
+  url: "/My_Portofolio/images/profile.jpg"
   alt: "Foto profil Izhatya Widad Audifa"
 ---
 
