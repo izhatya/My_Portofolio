@@ -1,109 +1,112 @@
 ---
-layout: /src/layouts/MarkdownAbout.astro
-title: "Fernando López | My Journey in Technology and Web Development 🚀| EFEELE"
-description: "Web developer, technology enthusiast, and event organizer. From my beginnings in development to creating communities and impactful projects, here I share my journey, experiences, and learnings. 🚀☕"
-author: "Fernando Lopez"
+layout: ../layouts/MarkdownAbout.astro
+title: "Izhatya Widad Audifa - Network Security Engineer"
+description: "Portofolio profesional Izhatya Widad Audifa, Network Security Engineer dengan pengalaman di data center dan keamanan jaringan."
+author: "Izhatya Widad Audifa"
 image:
   url: "/images/efeeleprofile.webp"
-  alt: "Photo of Fernando Aldair López Ponce (EFEELE) for the blog"
+  alt: "Foto profil Izhatya Widad Audifa"
 ---
 
-I started developing my first commercial projects as a web developer in 2017. Although I've been passionate about technology for as long as I can remember. I discovered the internet at age 6, and along with it, I learned to use **Paint** 🎨 and play **Pinball** on a **Windows XP** computer that my cousins had. Years passed, and I discovered there was a cyber café near my house, so accompanied by my older brother, I spent a lot of time there, watching others play **Age of Empires** ⚔️. When I could, I also played on the computers and investigated how those games worked. But above all, I remember that while sitting there, I watched the owner, Alfredo, the good <a href="https://fred.cpp.mx/" target="_blank" rel="noopener noreferrer">Fred</a>, while he programmed and modeled game maps, or at least that's what I remember. That made me want to try doing the same. I found it incredible how so many things happened on his screen that, although I couldn't understand them, looked amazing. Without a doubt, he was my first influence to get into programming.
+# Izhatya Widad Audifa
 
-When we got our first computer at home, around 2011, I spent all my time there, creating my own texture packs to integrate them into one of the games I played the most: **GTA SA**. For this, I learned to use **GIMP** and later **Photoshop**. I wanted to go further and started creating scenarios for the game, so that's when I learned 3D modeling. By then, I was already 12 years old, and I remember I had the intention of dedicating myself to creating video games 🎮. A couple of years later, knowing that programming is needed to create video games, I researched a bit and created my first website with **HTML 4** and **CSS3**. It was a static page, clearly not responsive, and its design and content were very poor, but I felt very proud seeing my page working online.
+**Network Security Engineer | NSE 1-3 | Cyber Security Enthusiast**
 
-## My Beginnings in Programming 🖥️
+Kota Bogor, Jawa Barat, Indonesia
 
-In 2014, I entered high school and decided to take the Programming Technician career. In the first semester, as an integral project, I knew I wanted to make a video game, so I committed to doing it. I learned to use **Unity**, delved deeper into **Blender**, and a bit into **C#**. It was an arduous process, as no one on my team knew how to program, but with their help, we all learned a bit more and managed to complete the project. We delivered a functional demo of a character in a scenario in our 3D _survival_ type game. It was at that moment that I discovered that making a video game is not easy at all and understood the magnitude of knowledge, time, and dedication needed.
+---
 
-I felt good about having achieved that small project, but gradually I fell more in love with web design and development. So, I started learning more about **HTML**, **CSS**, and **JavaScript**. I spent all my free time watching courses and practicing on fictional sites that I designed.
+## Ringkasan
 
-## The World of Robotics 🤖
+Saya adalah seorang profesional di bidang **network security** dengan pengalaman dalam melindungi infrastruktur IT dari ancaman siber yang kompleks dan terus berkembang. Terampil dalam memonitor, menganalisis, dan memperkuat keamanan jaringan menggunakan berbagai tools dan teknologi.
 
-In high school, a teacher and good friend, **Esteban Ángeles**, recruited me to belong to the school's robotics team, which competed in <a href="https://www.vexrobotics.com.mx/" target="_blank" rel="noopener noreferrer">VEX Robotics</a> tournaments. He saw me while I was designing a "3D spider robot" in **Autodesk Inventor**, so I was able to integrate more friends into the team. One of them was <a href="https://github.com/erikestr" target="_blank" rel="noopener noreferrer">Erik Alejandro Estrada Sauza</a>, someone with the same drive and curiosity as me. I was the robot designer, and he programmed it. Along with the rest of the team, we built it. It was a very fun experience full of learning.
+Saya memiliki pemahaman yang solid tentang **firewall, IDS/IPS, enkripsi, dan protokol keamanan**, dengan keahlian terbukti dalam menerapkan strategi mitigasi ancaman yang efektif. Saya selalu mengikuti perkembangan terbaru di bidang cybersecurity untuk membantu organisasi memastikan sistem mereka tetap aman dan tangguh terhadap potensi serangan.
 
-In 2015, thanks to teacher Esteban, I was invited to take an **Autodesk Inventor** course for a week in another city, offered directly by **Autodesk**. At that time, the need arose in the team to get a 3D printer to further improve the functioning of our robot, so we started researching and trying to manufacture our own 3D printer. During that process, we discovered **Kickstarter** and ventured to try to publish a 3D printing project.
+---
 
-## Exploring Crowdfunding 💡
+## Pengalaman Kerja
 
-We discovered that in Mexico there was **_Fondeadora_**, a platform similar to Kickstarter. Coincidentally, both platforms were about to merge and, as we had a draft project on Kickstarter, we were invited to the merger event between Fondeadora and Kickstarter. Additionally, we participated in the _<a href="https://www.kickstarter.com/projects/willburgm/100-kickstarter-dreams-the-voice-of-100-creators#react-campaign" target="_blank" rel="noopener noreferrer">Make/100 Kickstarter Dreams - The Voice of 100 Creators</a>_ project, an e-book with a compilation of 100 creators sharing their experience and knowledge gained in their campaigns. There I appeared representing my team as one of the 100 creators.
+### GreenBox Data Center
+**Information Technology Technician**
+*September 2023 - Juni 2026 (2 tahun 10 bulan) | Bogor, Jawa Barat*
 
-## My First Steps in TEDx Events 🎤
+- Memberikan dukungan teknis untuk perangkat keras dan jaringan di data center, memastikan resolusi cepat untuk meminimalkan downtime.
+- Menginstal, mengkonfigurasi, dan memelihara server, sistem penyimpanan, dan perangkat jaringan untuk memastikan kinerja dan keandalan optimal.
+- Melakukan pemeliharaan dan perbaikan rutin pada peralatan data center, termasuk server dan perangkat jaringan.
+- Membantu dalam penyiapan dan deployment hardware baru serta upgrade, memastikan integrasi yang lancar dengan sistem yang ada.
+- Memantau kinerja data center dan kondisi lingkungan, memastikan kepatuhan terhadap standar keselamatan dan operasional.
+- Mendokumentasikan proses, konfigurasi, dan solusi teknis untuk membangun basis pengetahuan yang komprehensif.
 
-I was approximately 14 years old when I discovered **TED** talks. I instantly became a fan and, since then, I wanted to attend a TED event, give a talk, or even be part of the organizing team. In 2018, I met a good friend, <a href="https://www.ted.com/profiles/7487162/" target="_blank" rel="noopener noreferrer">Octavio Rojas Xicali</a>, who gave me the opportunity to participate in my first **TEDx** event. I helped with the development of the event's website and with other organizational tasks. It was an incredible experience that consolidated my love for TED and my desire to contribute to spreading ideas.
+---
 
-Thanks to the people I met in that TEDx experience, I got some of my first clients, some of whom continue working with me to this day. Since then, I've dedicated myself to web development, while also carrying out small projects and organizing events.
+### AVASO Technology Solutions
+**Freelance**
+*Maret 2024 - Maret 2026 (2 tahun 1 bulan) | Indonesia*
 
-## We Organize Events 🚀
+---
 
-Between 2018 and 2019, I had the fortune to be a sponsor and collaborate in organizing:
+### Network Security Engineer
+*Desember 2020 - September 2023 (2 tahun 10 bulan) | Semarang, Jawa Tengah*
 
-- **<a href="https://www.ted.com/tedx/events/25335" target="_blank" rel="noopener noreferrer">TEDxPalmitas Transform Your Walls</a>** | 2018
-- **<a href="https://nights.talent-network.org/ediciones-anteriores/#" target="_blank" rel="noopener noreferrer">Talent Nights Hidalgo, Second Edition</a>** | 2018
-- **<a href="https://www.talent-network.org/comunidades/comunidades-centro/pachuca-startup-weekend/" target="_blank" rel="noopener noreferrer">Startup Weekend Pachuca Social Innovation</a>** | 2018
-- **<a href="https://www.talent-network.org/comunidades/comunidades-centro/pachuca-startup-weekend/" target="_blank" rel="noopener noreferrer">Techstars Global Startup Weekend Sustainable Revolution Pachuca</a>** | 2019
-- **<a href="https://www.ted.com/tedx/events/34332" target="_blank" rel="noopener noreferrer">TEDxPalmitas Winds of Change</a>** | 2019
+- Mengimplementasikan dan mengkonfigurasi solusi keamanan, termasuk firewall, intrusion detection systems (IDS), dan antivirus yang disesuaikan dengan kebutuhan klien.
+- Melakukan penilaian keamanan dan pemindaian kerentanan secara rutin untuk mengidentifikasi dan memitigasi potensi risiko di jaringan klien.
+- Memonitor jaringan klien secara real-time untuk mendeteksi dan merespons insiden keamanan, memastikan dampak minimal pada operasi.
+- Berkolaborasi dengan klien untuk mengembangkan dan menerapkan kebijakan keamanan dan praktik terbaik yang efektif.
+- Memberikan dukungan teknis dan panduan kepada klien tentang masalah terkait keamanan.
+- Berpartisipasi dalam aktivitas respons insiden, termasuk investigasi dan remediasi pelanggaran keamanan.
 
-## Creating Impact with Technology 🌍
+---
 
-<iframe class="w-full rounded-2xl overflow-hidden aspect-video h-auto" width="560" height="315" src="https://www.youtube.com/embed/6MlhVoqGWlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
+### PT. Identity Indonesia
+**Administrative Officer**
+*Oktober 2019 - Oktober 2020 (1 tahun 1 bulan) | Semarang, Jawa Tengah*
 
-In 2020, with the COVID-19 pandemic, I observed the need in some local medical centers and decided, along with a group of friends including <a href="https://www.linkedin.com/in/mmayradiga/"  target="_blank" rel="noopener noreferrer">Mayra Diaz</a>, to contribute our grain of sand by printing and donating 3D face shields. Little by little, the project grew and more people joined. Thus was born <a href="https://sdgactionawards.org/homemakersmexico/"  target="_blank" rel="noopener noreferrer">Hope Makers México</a>.
+- Mengelola perlengkapan kantor, menjadwalkan rapat, dan memelihara peralatan kantor untuk memastikan lingkungan kerja yang produktif.
+- Mengorganisir dan memelihara file, catatan, dan dokumentasi untuk memastikan akurasi data dan kepatuhan terhadap standar organisasi.
+- Mengkoordinasikan pengaturan perjalanan dan perencanaan acara untuk staf dan pemangku kepentingan.
 
-In 2021, together with another great friend, Guillermo Mora, we created <a href="https://devs.tizayocan.com/"  target="_blank" rel="noopener noreferrer">Devs_Tiza</a>, a community for developers, designers, and technology enthusiasts. Our goal is to organize events, workshops, and mentoring to strengthen the local technology ecosystem.
+---
 
-## Sharing Knowledge 🧠
+### CV. Karya Jasa Mandiri
+**Network Operations Center (NOC) Technician**
+*Juni 2017 - Agustus 2019 (2 tahun 3 bulan) | Pemalang, Jawa Tengah*
 
-I've always liked **sharing my knowledge**. I often give small courses or mentoring to friends, students, or companies. When questions arise from them is when I learn the most, because sometimes these questions may seem simple and the answers are something we take for granted, but perhaps we don't fully understand why it is so. This pushes us to:
+- Memantau metrik kinerja jaringan, seperti penggunaan bandwidth, latensi, dan ketersediaan sistem, untuk mengidentifikasi dan mengatasi potensi masalah sebelum berdampak pada operasi bisnis.
+- Memecahkan dan menyelesaikan masalah jaringan terkait router, switch, firewall, dan perangkat jaringan lainnya.
+- Berkolaborasi dengan tim IT lain untuk mengimplementasikan upgrade, konfigurasi, dan patch jaringan, memastikan downtime minimal dan keamanan maksimum.
+- Mengelola alert dan insiden melalui sistem ticketing, mendokumentasikan resolusi, dan melakukan eskalasi jika diperlukan.
+- Memastikan ketersediaan jaringan 24/7 dengan berpartisipasi dalam rotasi panggilan dan memberikan pembaruan tepat waktu tentang status insiden kepada pemangku kepentingan.
 
-- Deepen our understanding of concepts
-- Understand them better
-- Transform them into something that can be taught clearly and practically
+---
 
-> Grounding knowledge is, for me, the bridge between knowing and teaching.
+## Sertifikasi
 
-### Programming Mentoring 💻
+- **Cybersecurity Awareness** - CAPC
+- **CCNA: Introduction to Networks** - Cisco
+- **Certified Cybersecurity Educator** - (Sertifikasi)
+- **Professional Cyber Threat Management** - (Sertifikasi)
+- **NSE 1 - NSE 3** - Fortinet Network Security Expert
 
-From 2021 to the present, I have closely guided more than 15 high school students in the programming career. Taking into account that they are starting their education, when they reach the point of understanding how web pages are made, they begin with the most basic:
+---
 
-1. HTML
-2. CSS
-3. JavaScript (fundamentals)
+## Keahlian
 
-I have tried to teach them this in the way I would have liked to learn it at the time, obtaining excellent results, as concepts that weren't clear to them in school could be understood and applied following this different approach.
+| Kategori | Keahlian |
+|----------|----------|
+| **Keamanan Jaringan** | Firewall, IDS/IPS, Enkripsi, Protokol Keamanan |
+| **Analisis** | Mail Log Analysis, Vulnerability Assessment |
+| **Tools** | Safetica, Vimana |
+| **Infrastruktur** | Server, Storage, Jaringan (Router/Switch) |
+| **Monitoring** | NOC Operations, Real-time Monitoring |
 
-### Educational Content on YouTube 📹
+---
 
-Many of them were especially interested in frontend and wanted to better understand and master CSS. Therefore, I started creating small videos that I uploaded to my <a href="https://www.youtube.com/@efeeledev" target="_blank" rel="noopener noreferrer">YouTube channel</a> privately so they could consult them when needed.
+## Kontak
 
-In 2024, I recorded some <a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">FrontEndMentor</a> challenges with better quality and published them on my channel. Currently, I share these resources with people I know who are interested in the topic and want to learn by watching how it's put into practice.
+- **Email**: [izzhatayaudifa123@gmail.com](mailto:izzhatayaudifa123@gmail.com)
+- **LinkedIn**: [linkedin.com/in/izhataya](https://www.linkedin.com/in/izhataya)
+- **GitHub**: [github.com/izhatya](https://github.com/izhatya)
 
-Although there are few videos, I really enjoyed the process. Due to time limitations, I haven't been able to record more, as they require a lot of dedication, but I'm sure that **I'll soon be publishing new content**.
+---
 
-### Some of My Videos 🎬
-
-Here I share some of those videos I've created to help others learn web development. Each one addresses different challenges and techniques that can be useful for those who are starting in the frontend world.
-
-<div className="grid grid-cols-2 grid-rows-1 gap-4">
-    <a href="https://www.youtube.com/watch?v=3c_I0z7zWA4" target="_blank" class="w-full aspect-video  rounded-lg overflow-hidden"> <img src="https://i.ytimg.com/vi/3c_I0z7zWA4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAlyIf_1XClnSkZvhjsDHVO1fNpdw"> </a>
-     <a href="https://www.youtube.com/watch?v=1q7YTgCgYEM&t " target="_blank"  class="w-full aspect-video rounded-lg overflow-hidden"><img src="https://i.ytimg.com/vi/1q7YTgCgYEM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLADBY3y6quLEnjFya4a1Goo6h5_2w"></img></a>
-    <a  href="https://www.youtube.com/watch?v=PYMEWsxiu5A&t" target="_blank" class="w-full aspect-video rounded-lg overflow-hidden"><img src="https://i.ytimg.com/vi/PYMEWsxiu5A/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAS2t0vxEufiWoxqwRRq8qIxRvICw"></img></a>
-    <a href="https://www.youtube.com/watch?v=vbefk8HFEzc&t" target="_blank"  class="w-full aspect-video rounded-lg overflow-hidden"><img src="https://i.ytimg.com/vi/vbefk8HFEzc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDaxgQ4OBeCsn-KMbJXaZK_wJh9GQ"></img></a>
-</div>
-
-## What's Next... 🚀
-
-In 2023, **Proyecto Tizayocan** was born, an initiative that seeks to apply technology to improve education, urban management, and connectivity in the municipality. This project is still in development, and we are gathering more collaborators to continue advancing.
-
-At the end of 2024, after years working in the city council as **_Software Development Coordinator_**, and seeing the technological deficiencies of some municipalities, **StellarGov** emerges, a web components framework with Tailwind to help developers of small governments create fast and quality websites.
-
-## A Bit More About Me ☕
-
-Today, in 2025, I continue working as **_Software Development Coordinator_** in my municipality, collaborating with my usual clients and launching projects. I love creating things, experimenting with new ideas, and organizing events. I live with the _maker_ spirit: learning, experimenting, and sometimes causing a bit of chaos. But well, everything is forgiven if there's music and coffee involved. ☕🎶
-
-Oh! And I'm an expert at preparing coffee. Seriously, whether it's to start the day or for a creative session, I have the perfect recipe. I'm also pretty good at board games, so if you ever need a partner for a game night, I'm your person! 🎲
-
-I'm **Fernando Aldair López Ponce**, and I thank you for reading this.
-
-## Let's Create Amazing Things! 🚀 
+> *"Terus belajar dan berkontribusi untuk keamanan siber yang lebih baik."*
