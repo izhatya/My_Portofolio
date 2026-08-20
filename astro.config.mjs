@@ -1,25 +1,14 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from "@tailwindcss/vite";
 import preact from "@astrojs/preact";
-import sitemap from "@astrojs/sitemap"
 import icon from "astro-icon";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://neonmint.efeele.dev",
-  integrations: [preact(), icon(), sitemap({
-    filter: (page) =>
-      !page.includes("/blog/tags") &&
-      !page.includes("/blog/techs"),
-  }),],
-
+  site: 'https://izhatya.github.io',
+  base: '/My_Portofolio',
   vite: {
     plugins: [tailwindcss()],
   },
-  markdown: {
-    shikiConfig: {
-      theme: 'github-dark'
-    },
-  },
+  integrations: [preact(), icon()],
 });
