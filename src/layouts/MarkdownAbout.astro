@@ -80,8 +80,18 @@ const { frontmatter } = Astro.props;
         <Heading text="About" textGradient="me" />
       </div>
 
-      <!-- PERBAIKAN: Tambahkan kelas untuk tabel agar teks terbaca -->
-      <div class="markdown prose-td:text-black dark:prose-td:text-gray-200" id="content">
+      <!-- FIX: tambahkan kelas untuk tabel di dark mode -->
+      <div 
+        class="markdown 
+          prose-td:text-black dark:prose-td:text-gray-200 
+          prose-th:text-black dark:prose-th:text-white
+          prose-p:text-black dark:prose-p:text-gray-200
+          prose-li:text-black dark:prose-li:text-gray-200
+          prose-headings:text-black dark:prose-headings:text-white
+          prose-strong:text-black dark:prose-strong:text-white
+        " 
+        id="content"
+      >
         <slot />
       </div>
     </article>
