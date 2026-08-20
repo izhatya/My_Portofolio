@@ -1,22 +1,19 @@
 ---
-import { Icon } from "astro-icon/components";
-
 const hobbies = [
-  { name: "Network Monitoring", icon: "eye" },
-  { name: "Cyber Security Research", icon: "search" },
-  { name: "Membaca", icon: "book" },
-  { name: "Camping", icon: "tree" },
-  { name: "Kopi", icon: "coffee" },
-  { name: "Teknologi", icon: "chip" },
+  "Network Monitoring",
+  "Cyber Security Research",
+  "Membaca",
+  "Camping",
+  "Kopi",
+  "Teknologi",
 ];
 ---
 
 <div class="flex flex-wrap gap-2">
   {
     hobbies.map((hobby) => (
-      <div class="flex items-center gap-2 rounded-full bg-riptide-100 dark:bg-riptide-950/30 px-4 py-2 text-sm font-medium text-blacktext dark:text-zinc-300 border border-riptide-200 dark:border-riptide-800">
-        <Icon name={hobby.icon} class="w-4 h-4 text-riptide-500" />
-        <span>{hobby.name}</span>
+      <div class="rounded-full bg-riptide-100 dark:bg-riptide-950/30 px-4 py-2 text-sm font-medium text-blacktext dark:text-zinc-300 border border-riptide-200 dark:border-riptide-800">
+        {hobby}
       </div>
     ))
   }
