@@ -41,15 +41,20 @@ const {
           >
           </div>
           <div class="relative z-20 flex w-full rounded-full bg-mint-900">
-            <div
-              class="w-full aspect-square rounded-full bg-center bg-cover"
-              style={`background-image: url(${profileImage})`}
-              aria-label={profileAlt}
-            >
+            <!-- PERBAIKAN DI SINI: Pakai <img> langsung, bukan background-image -->
+            <div class="w-full aspect-square rounded-full overflow-hidden">
+              <img 
+                src={profileImage} 
+                alt={profileAlt}
+                class="w-full h-full object-cover"
+                width="200"
+                height="200"
+              />
               <a
                 href={profileLink}
-                class="flex h-full w-full"
-                aria-label="View about me page"></a>
+                class="absolute inset-0 z-10"
+                aria-label="View about me page"
+              ></a>
             </div>
           </div>
         </div>
@@ -175,7 +180,8 @@ const {
         <a
           href="#projects"
           class="absolute left-0 top-0 z-40 h-full w-full bg-transparent"
-          aria-label="View projects section"></a>
+          aria-label="View projects section"
+        ></a>
         <div class="flex items-center gap-4 max-md:gap-2">
           <Icon
             class="text-3xl dark:text-white text-mint-500 max-md:text-2xl max-sm:text-xl"
