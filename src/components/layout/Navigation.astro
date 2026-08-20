@@ -9,16 +9,17 @@ const { items = [] }: { items: (keyof typeof menu)[] } = Astro.props as {
   items: (keyof typeof menu)[];
 };
 
+// INI YANG DIUBAH: semua path ditambahi /My_Portofolio
 const menu = {
-  about: { name: "About Me", path: "/about-me" },
+  about: { name: "About Me", path: "/My_Portofolio/about-me" },
   blog: {
     name: "Blog",
-    path: "/blog/",
-    dropdown: [{ name: "All Posts", path: "/blog/posts/" }],
+    path: "/My_Portofolio/blog/",
+    dropdown: [{ name: "All Posts", path: "/My_Portofolio/blog/posts/" }],
   },
-  home: { name: "Home", path: "/#home" },
-  experience: { name: "Experience", path: "/#experience" },
-  projects: { name: "Projects", path: "/#projects" },
+  home: { name: "Home", path: "/My_Portofolio/#home" },
+  experience: { name: "Experience", path: "/My_Portofolio/#experience" },
+  projects: { name: "Projects", path: "/My_Portofolio/#projects" },
 };
 
 // Common base classes
