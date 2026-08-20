@@ -173,7 +173,7 @@ Pengenalan Next-Generation Firewall (NGFW) melalui live streaming. Memberikan ed
 
 ## Kontak
 
-- **Email**: [izhatayaudifa123@gmail.com](mailto:izhatayaudifa123@gmail.com)
+- **Email**: [izhatyaaudifa123@gmail.com](mailto:izhatyaaudifa123@gmail.com)
 - **LinkedIn**: [linkedin.com/in/izhatya](https://www.linkedin.com/in/izhatya)
 - **GitHub**: [github.com/izhatya](https://github.com/izhatya)
 
