@@ -102,19 +102,19 @@ Sebagai NOC Technician, saya bertanggung jawab untuk memonitor dan memelihara in
 
 | Sertifikasi | Penerbit | Tahun | Status |
 |-------------|----------|-------|--------|
-| **Certified Cybersecurity Educator Professional (CCEP)** | Red Team Leaders | 2026 | Aktif |
-| **Fortinet FortiGate 7.4 Operator** | Fortinet | 2024 | Aktif |
-| **Fortinet Certified Associate Cybersecurity** | Fortinet | 2024 - 2026 | Aktif |
-| **Fortinet Certified Fundamentals Cybersecurity** | Fortinet | 2022 - 2024 | Kadaluarsa |
-| **NSE 1 - Network Security Expert** | Fortinet | 2022 - 2024 | Kadaluarsa |
-| **NSE 2 - Network Security Expert** | Fortinet | 2022 - 2024 | Kadaluarsa |
-| **NSE 3 - Network Security Expert** | Fortinet | 2022 - 2024 | Kadaluarsa |
-| **CCNA: Enterprise Networking, Security, and Automation** | Cisco | 2024 | Aktif |
-| **CCNA: Switching, Routing, and Wireless Essentials** | Cisco | 2024 | Aktif |
-| **CCNA: Introduction to Networks** | Cisco | 2024 | Aktif |
-| **Cyber Threat Management** | Cisco | 2023 | Aktif |
-| **Endpoint Security** | Cisco | 2023 | Aktif |
-| **Cybersecurity Awareness - CAPC!** | Certiprof | 2024 | Aktif |
+| Certified Cybersecurity Educator Professional (CCEP) | Red Team Leaders | 2026 | Aktif |
+| Fortinet FortiGate 7.4 Operator | Fortinet | 2024 | Aktif |
+| Fortinet Certified Associate Cybersecurity | Fortinet | 2024 - 2026 | Aktif |
+| Fortinet Certified Fundamentals Cybersecurity | Fortinet | 2022 - 2024 | Kadaluarsa |
+| NSE 1 - Network Security Expert | Fortinet | 2022 - 2024 | Kadaluarsa |
+| NSE 2 - Network Security Expert | Fortinet | 2022 - 2024 | Kadaluarsa |
+| NSE 3 - Network Security Expert | Fortinet | 2022 - 2024 | Kadaluarsa |
+| CCNA: Enterprise Networking, Security, and Automation | Cisco | 2024 | Aktif |
+| CCNA: Switching, Routing, and Wireless Essentials | Cisco | 2024 | Aktif |
+| CCNA: Introduction to Networks | Cisco | 2024 | Aktif |
+| Cyber Threat Management | Cisco | 2023 | Aktif |
+| Endpoint Security | Cisco | 2023 | Aktif |
+| Cybersecurity Awareness - CAPC! | Certiprof | 2024 | Aktif |
 
 ---
 
@@ -135,6 +135,7 @@ Sebagai NOC Technician, saya bertanggung jawab untuk memonitor dan memelihara in
 
 ### Fortigate Installation and Configuration Training Bank Boyolali
 *Maret 2023*
+
 Instalasi dan konfigurasi Fortigate untuk keamanan jaringan di Bank Boyolali. Meliputi deployment firewall, policy configuration, dan training tim IT internal.
 
 **Skills:** Fortinet, Network Security, Firewall Configuration
@@ -143,6 +144,7 @@ Instalasi dan konfigurasi Fortigate untuk keamanan jaringan di Bank Boyolali. Me
 
 ### Training ESET Business RS Ortopedi Dr. Soeharso Surakarta
 *Maret 2023*
+
 Pelatihan dan implementasi solusi keamanan ESET Business untuk Rumah Sakit Ortopedi Dr. Soeharso Surakarta. Mencakup deployment endpoint protection dan training penggunaan.
 
 **Skills:** ESET, Network Security, Endpoint Protection
@@ -151,6 +153,7 @@ Pelatihan dan implementasi solusi keamanan ESET Business untuk Rumah Sakit Ortop
 
 ### POC Genians NAC RSUD Dr. Moewardi Surakarta
 *Februari 2023*
+
 Proof of Concept (POC) untuk implementasi Network Access Control (NAC) Genians di RSUD Dr. Moewardi Surakarta. Menguji efektivitas solusi NAC dalam mengontrol akses jaringan.
 
 **Skills:** Network Security, NAC, Genians
@@ -161,12 +164,14 @@ Proof of Concept (POC) untuk implementasi Network Access Control (NAC) Genians d
 
 ### Introduction Secpoint
 *Februari 2023 (1 bulan) | Softwarekantor*
+
 Pengenalan dan sosialisasi solusi keamanan Secpoint kepada tim dan klien. Berbagi pengetahuan tentang fitur dan implementasi Secpoint untuk keamanan jaringan.
 
 ---
 
 ### Introduction NGFW
 *Agustus 2023 (1 bulan) | Meta4sec*
+
 Pengenalan Next-Generation Firewall (NGFW) melalui live streaming. Memberikan edukasi tentang teknologi NGFW, fungsionalitas, dan manfaatnya bagi keamanan organisasi.
 
 ---
