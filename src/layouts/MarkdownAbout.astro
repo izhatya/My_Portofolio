@@ -15,27 +15,30 @@ const {
 const fullImage = "/My_Portofolio/images/profile.jpg";
 ---
 
-<Layout pageTitle="Izhatya Widad Audifa - Network Security Engineer" description="Portofolio profesional Izhatya Widad Audifa">
+<Layout 
+  pageTitle="Izhatya Widad Audifa - Network Security Engineer" 
+  description="Portofolio profesional Izhatya Widad Audifa, Network Security Engineer dengan pengalaman di data center dan keamanan jaringan."
+>
   <div class="max-w-5xl mx-auto px-4 py-12">
     
-    <!-- Card Header dengan Gaya Asli NeonMint -->
+    <!-- HEADER PROFIL - GAYA ORIGINAL NEONMINT -->
     <div class="relative overflow-hidden rounded-3xl bg-linear-to-r from-mint-300 dark:from-mint-600 to-mint-50 dark:to-mint-200/5 hover:to-mint-300/30 dark:hover:to-mint-600/30 p-[2px] mb-12">
       <div class="relative z-0 flex items-center gap-8 p-8 rounded-3xl bg-linear-to-tr from-riptide-100 to-white dark:bg-linear-to-r dark:from-mint-950 dark:to-zinc-950 max-sm:flex-col max-sm:text-center">
         
-        <!-- Efek glow background -->
+        <!-- Efek Glow -->
         <div class="dark:before:bg-[radial-gradient(circle,rgba(13,188,130)_0,rgba(1,45,34)_100%)] before:bg-[radial-gradient(circle,rgba(95,255,202)_0,rgba(144,253,210)_100%)] before:absolute before:left-30 before:bottom-0 before:h-[80%] before:aspect-square before:rounded-full before:blur-3xl before:opacity-60 before:-z-10 before:transition"></div>
         
-        <!-- Foto Profil -->
+        <!-- FOTO PROFIL -->
         <div class="flex-shrink-0">
           <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-mint-400 dark:border-mint-600 shadow-xl">
             <img src={fullImage} alt={profileAlt} class="w-full h-full object-cover" />
           </div>
         </div>
         
-        <!-- Nama & Judul -->
+        <!-- NAMA & JUDUL -->
         <div class="z-10">
           <h1 class="text-4xl font-black text-blacktext dark:text-white max-sm:text-3xl">
-            {profileName}
+            {profileName} 👋
           </h1>
           <p class="text-xl font-semibold text-mint-600 dark:text-mint-400 max-sm:text-lg">
             {profileTitle}
@@ -50,7 +53,7 @@ const fullImage = "/My_Portofolio/images/profile.jpg";
       </div>
     </div>
 
-    <!-- Konten Markdown dengan Gaya Asli (tanpa bg card tambahan) -->
+    <!-- KONTEN MARKDOWN - GAYA ORIGINAL -->
     <article class="prose prose-lg dark:prose-invert max-w-none 
       prose-headings:text-black dark:prose-headings:text-white 
       prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
@@ -65,7 +68,6 @@ const fullImage = "/My_Portofolio/images/profile.jpg";
       prose-td:border prose-td:border-mint-200 dark:prose-td:border-mint-800 prose-td:p-3
       prose-p:text-black dark:prose-p:text-gray-200
       prose-li:text-black dark:prose-li:text-gray-200
-      prose-hr:border-mint-200 dark:prose-hr:border-mint-800
     ">
       <slot />
     </article>
