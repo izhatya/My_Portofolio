@@ -1,24 +1,21 @@
 ---
-import { Icon } from "astro-icon/components";
-
 const tools = [
-  { name: "Firewall & IDS/IPS", icon: "shield" },
-  { name: "Safetica", icon: "shield" },
-  { name: "Vimana", icon: "server" },
-  { name: "Mail Log Analysis", icon: "envelope" },
-  { name: "Encryption & Security Protocols", icon: "lock" },
-  { name: "Vulnerability Assessment", icon: "search" },
-  { name: "NOC Operations", icon: "monitor" },
-  { name: "Server & Network Infrastructure", icon: "server" },
+  "Firewall & IDS/IPS",
+  "Safetica",
+  "Vimana",
+  "Mail Log Analysis",
+  "Encryption & Security Protocols",
+  "Vulnerability Assessment",
+  "NOC Operations",
+  "Server & Network Infrastructure",
 ];
 ---
 
 <div class="flex flex-wrap gap-2">
   {
     tools.map((tool) => (
-      <div class="flex items-center gap-2 rounded-full bg-mint-100 dark:bg-mint-950/50 px-4 py-2 text-sm font-medium text-blacktext dark:text-zinc-300 border border-mint-200 dark:border-mint-800">
-        <Icon name={tool.icon} class="w-4 h-4 text-mint-500" />
-        <span>{tool.name}</span>
+      <div class="rounded-full bg-mint-100 dark:bg-mint-950/50 px-4 py-2 text-sm font-medium text-blacktext dark:text-zinc-300 border border-mint-200 dark:border-mint-800">
+        {tool}
       </div>
     ))
   }
