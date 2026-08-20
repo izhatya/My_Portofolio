@@ -52,7 +52,7 @@ Bekerja sebagai freelance di bidang network security, memberikan solusi keamanan
 
 ---
 
-### softwarekantor
+### Softwarekantor
 **Network Security Engineer** | *Full-time*
 *Desember 2020 - September 2023 (2 tahun 10 bulan) | Semarang, Jawa Tengah*
 
@@ -160,7 +160,7 @@ Proof of Concept (POC) untuk implementasi Network Access Control (NAC) Genians d
 ## Volunteering
 
 ### Introduction Secpoint
-*Februari 2023 (1 bulan) | softwarekantor*
+*Februari 2023 (1 bulan) | Softwarekantor*
 Pengenalan dan sosialisasi solusi keamanan Secpoint kepada tim dan klien. Berbagi pengetahuan tentang fitur dan implementasi Secpoint untuk keamanan jaringan.
 
 ---
