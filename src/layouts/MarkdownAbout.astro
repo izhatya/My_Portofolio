@@ -17,22 +17,20 @@ const fullImage = "/My_Portofolio/images/profile.jpg";
 
 <Layout pageTitle="Izhatya Widad Audifa - Network Security Engineer" description="Portofolio profesional Izhatya Widad Audifa">
   <div class="max-w-5xl mx-auto px-4 py-12">
-    <!-- Card Header Profil dengan Gaya NeonMint -->
-    <div class="relative overflow-hidden rounded-3xl bg-linear-to-r from-mint-300 dark:from-mint-600 to-mint-50 dark:to-mint-200/5 hover:to-mint-300/30 dark:hover:to-mint-600/30 p-[2px] mb-12">
-      <div class="relative z-0 flex items-center gap-8 p-8 rounded-3xl bg-linear-to-tr from-riptide-100 to-white dark:bg-linear-to-r dark:from-mint-950 dark:to-zinc-950 max-sm:flex-col max-sm:text-center">
-        
-        <!-- Efek glow background -->
-        <div class="dark:before:bg-[radial-gradient(circle,rgba(13,188,130)_0,rgba(1,45,34)_100%)] before:bg-[radial-gradient(circle,rgba(95,255,202)_0,rgba(144,253,210)_100%)] before:absolute before:left-30 before:bottom-0 before:h-[80%] before:aspect-square before:rounded-full before:blur-3xl before:opacity-60 before:-z-10 before:transition"></div>
+    
+    <!-- Card Header Profil (CERAH) -->
+    <div class="relative overflow-hidden rounded-3xl bg-white dark:bg-zinc-900 border border-mint-200 dark:border-mint-800 shadow-xl mb-12">
+      <div class="flex items-center gap-8 p-8 max-sm:flex-col max-sm:text-center">
         
         <!-- Foto Profil -->
         <div class="flex-shrink-0">
-          <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-mint-400 dark:border-mint-600 shadow-xl">
+          <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-mint-400 shadow-lg">
             <img src={fullImage} alt={profileAlt} class="w-full h-full object-cover" />
           </div>
         </div>
         
         <!-- Nama & Judul -->
-        <div class="z-10">
+        <div>
           <h1 class="text-4xl font-black text-blacktext dark:text-white max-sm:text-3xl">
             {profileName} 👋
           </h1>
@@ -49,19 +47,23 @@ const fullImage = "/My_Portofolio/images/profile.jpg";
       </div>
     </div>
 
-    <!-- Konten Markdown (About Me) dengan Gaya Prose -->
-    <article class="prose prose-lg dark:prose-invert max-w-none 
+    <!-- Konten Markdown (CERAH) -->
+    <article class="prose prose-lg max-w-none 
       prose-headings:text-black dark:prose-headings:text-white 
       prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
       prose-a:text-mint-500 prose-a:no-underline hover:prose-a:underline
       prose-strong:text-mint-600 dark:prose-strong:text-mint-400
       prose-ul:list-disc prose-li:marker:text-mint-400
-      prose-blockquote:border-mint-400 prose-blockquote:bg-mint-50/50 dark:prose-blockquote:bg-mint-950/30
+      prose-blockquote:border-mint-400 prose-blockquote:bg-mint-50 dark:prose-blockquote:bg-mint-950/30
       prose-code:text-mint-600 dark:prose-code:text-mint-300
-      prose-pre:bg-zinc-900 dark:prose-pre:bg-zinc-950
-      prose-table:border-collapse prose-table:border prose-table:border-mint-200 dark:prose-table:border-mint-800
-      prose-th:bg-mint-100 dark:prose-th:bg-mint-950/50 prose-th:border prose-th:border-mint-200 dark:prose-th:border-mint-800
-      prose-td:border prose-td:border-mint-200 dark:prose-td:border-mint-800 prose-td:p-3
+      prose-pre:bg-gray-100 dark:prose-pre:bg-zinc-800
+      prose-table:border-collapse prose-table:border prose-table:border-gray-300 dark:prose-table:border-mint-800
+      prose-th:bg-mint-100 dark:prose-th:bg-mint-950/50 prose-th:border prose-th:border-gray-300 dark:prose-th:border-mint-800
+      prose-td:border prose-td:border-gray-300 dark:prose-td:border-mint-800 prose-td:p-3
+      prose-p:text-black dark:prose-p:text-gray-200
+      prose-li:text-black dark:prose-li:text-gray-200
+      prose-hr:border-mint-200 dark:prose-hr:border-mint-800
+      bg-white dark:bg-zinc-900 rounded-2xl p-8 shadow-md
     ">
       <slot />
     </article>
