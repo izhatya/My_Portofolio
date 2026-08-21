@@ -2,7 +2,6 @@
 import Layout from "./Layout.astro";
 import { Icon } from "astro-icon/components";
 import Heading from "../components/ui/Heading.astro";
-import Experience from "../components/portfolio/Experience.astro";
 import NavArticle from "../components/layout/NavArticle.astro";
 import Contact from "../components/portfolio/Contact.astro";
 import Tools from "../components/portfolio/Tools.astro";
@@ -87,16 +86,8 @@ const { frontmatter } = Astro.props;
     </article>
     <NavArticle title={frontmatter.title} />
   </section>
-  <section class="py-8 px-8 max-md:py-4 mb-4 scroll-m-16" id="experience">
-    <div class="flex flex-col gap-8 pt-8 max-w-4xl mx-auto">
-      <div class="flex gap-4 items-center justify-center">
-        <Icon class="text-3xl text-white" name="briefcase" />
-        <Heading text="Experience" textGradient="Work" level={2} />
-      </div>
 
-      <Experience />
-    </div>
-  </section>
+  <!-- HANYA TECH STACK (tidak ada Experience lagi) -->
   <section class="py-8 px-8 max-md:py-4 mt-10 mb-20 scroll-m-16" id="sttack">
     <div class="flex flex-col gap-8 max-w-3xl justify-center mx-auto">
       <div class="flex gap-4 items-center justify-center">
@@ -109,9 +100,9 @@ const { frontmatter } = Astro.props;
   <Contact />
 </Layout>
 
-<!-- CSS TAMBAHAN (PASTI) UNTUK MEMAKSA WARNA TEKS DI TABEL -->
+<!-- CSS TAMBAHAN UNTUK MEMAKSA WARNA TEKS DI DARK MODE -->
 <style>
-  /* Dark Mode: paksa semua teks di tabel menjadi putih */
+  /* Dark Mode: semua teks di tabel menjadi putih */
   html.dark .markdown table,
   html.dark .markdown table td,
   html.dark .markdown table th,
@@ -119,22 +110,19 @@ const { frontmatter } = Astro.props;
   html.dark .markdown table caption,
   html.dark .markdown table tbody,
   html.dark .markdown table thead {
-    color: #e5e7eb !important; /* gray-200 */
+    color: #e5e7eb !important;
   }
 
-  /* Dark Mode: header tabel menjadi lebih terang */
   html.dark .markdown table th {
-    color: #f3f4f6 !important; /* gray-100 */
-    background-color: #1f2937 !important; /* gray-800 */
+    color: #f3f4f6 !important;
+    background-color: #1f2937 !important;
   }
 
-  /* Dark Mode: border tabel menjadi lebih terlihat */
   html.dark .markdown table td,
   html.dark .markdown table th {
-    border-color: #374151 !important; /* gray-700 */
+    border-color: #374151 !important;
   }
 
-  /* Dark Mode: semua paragraf, list, heading, dan teks tebal di dalam markdown menjadi putih */
   html.dark .markdown p,
   html.dark .markdown li,
   html.dark .markdown h1,
@@ -163,7 +151,7 @@ const { frontmatter } = Astro.props;
   html.dark .markdown .prose h4,
   html.dark .markdown .prose h5,
   html.dark .markdown .prose h6 {
-    color: #e5e7eb !important; /* gray-200 */
+    color: #e5e7eb !important;
   }
 
   html.dark .markdown h1,
@@ -178,10 +166,10 @@ const { frontmatter } = Astro.props;
   html.dark .markdown .prose h4,
   html.dark .markdown .prose h5,
   html.dark .markdown .prose h6 {
-    color: #f3f4f6 !important; /* gray-100 */
+    color: #f3f4f6 !important;
   }
 
-  /* Light Mode: paksa semua teks di tabel menjadi hitam */
+  /* Light Mode: semua teks di tabel menjadi hitam */
   html:not(.dark) .markdown table,
   html:not(.dark) .markdown table td,
   html:not(.dark) .markdown table th,
@@ -215,7 +203,6 @@ const { frontmatter } = Astro.props;
     color: #000000 !important;
   }
 
-  /* Tambahan untuk memastikan semua elemen di dalam .markdown ikut */
   .markdown * {
     color: inherit !important;
   }
