@@ -80,7 +80,7 @@ const { frontmatter } = Astro.props;
         <Heading text="About" textGradient="me" />
       </div>
 
-      <!-- CONTENT MARKDOWN -->
+      <!-- KONTEN MARKDOWN -->
       <div class="markdown" id="content">
         <slot />
       </div>
@@ -109,30 +109,32 @@ const { frontmatter } = Astro.props;
   <Contact />
 </Layout>
 
-<!-- CSS TAMBAHAN UNTUK MEMAKSA WARNA TEKS DI DARK MODE -->
+<!-- CSS TAMBAHAN (PASTI) UNTUK MEMAKSA WARNA TEKS DI TABEL -->
 <style>
-  /* Dark Mode: semua teks di tabel menjadi putih */
+  /* Dark Mode: paksa semua teks di tabel menjadi putih */
   html.dark .markdown table,
   html.dark .markdown table td,
   html.dark .markdown table th,
   html.dark .markdown table tr,
-  html.dark .markdown table caption {
+  html.dark .markdown table caption,
+  html.dark .markdown table tbody,
+  html.dark .markdown table thead {
     color: #e5e7eb !important; /* gray-200 */
   }
-  
+
   /* Dark Mode: header tabel menjadi lebih terang */
   html.dark .markdown table th {
     color: #f3f4f6 !important; /* gray-100 */
     background-color: #1f2937 !important; /* gray-800 */
   }
-  
+
   /* Dark Mode: border tabel menjadi lebih terlihat */
   html.dark .markdown table td,
   html.dark .markdown table th {
     border-color: #374151 !important; /* gray-700 */
   }
-  
-  /* Dark Mode: semua paragraf di dalam markdown menjadi putih */
+
+  /* Dark Mode: semua paragraf, list, heading, dan teks tebal di dalam markdown menjadi putih */
   html.dark .markdown p,
   html.dark .markdown li,
   html.dark .markdown h1,
@@ -142,33 +144,79 @@ const { frontmatter } = Astro.props;
   html.dark .markdown h5,
   html.dark .markdown h6,
   html.dark .markdown strong,
-  html.dark .markdown b {
+  html.dark .markdown b,
+  html.dark .markdown em,
+  html.dark .markdown i,
+  html.dark .markdown span,
+  html.dark .markdown div,
+  html.dark .markdown blockquote,
+  html.dark .markdown code,
+  html.dark .markdown pre,
+  html.dark .markdown .prose,
+  html.dark .markdown .prose p,
+  html.dark .markdown .prose li,
+  html.dark .markdown .prose strong,
+  html.dark .markdown .prose b,
+  html.dark .markdown .prose h1,
+  html.dark .markdown .prose h2,
+  html.dark .markdown .prose h3,
+  html.dark .markdown .prose h4,
+  html.dark .markdown .prose h5,
+  html.dark .markdown .prose h6 {
     color: #e5e7eb !important; /* gray-200 */
   }
-  
-  /* Dark Mode: heading lebih terang */
+
   html.dark .markdown h1,
   html.dark .markdown h2,
   html.dark .markdown h3,
   html.dark .markdown h4,
   html.dark .markdown h5,
-  html.dark .markdown h6 {
+  html.dark .markdown h6,
+  html.dark .markdown .prose h1,
+  html.dark .markdown .prose h2,
+  html.dark .markdown .prose h3,
+  html.dark .markdown .prose h4,
+  html.dark .markdown .prose h5,
+  html.dark .markdown .prose h6 {
     color: #f3f4f6 !important; /* gray-100 */
   }
-  
-  /* Light Mode: semua teks di tabel menjadi hitam */
+
+  /* Light Mode: paksa semua teks di tabel menjadi hitam */
   html:not(.dark) .markdown table,
   html:not(.dark) .markdown table td,
   html:not(.dark) .markdown table th,
   html:not(.dark) .markdown table tr,
-  html:not(.dark) .markdown table caption {
+  html:not(.dark) .markdown table caption,
+  html:not(.dark) .markdown table tbody,
+  html:not(.dark) .markdown table thead {
     color: #000000 !important;
   }
-  
+
   html:not(.dark) .markdown p,
   html:not(.dark) .markdown li,
   html:not(.dark) .markdown strong,
-  html:not(.dark) .markdown b {
+  html:not(.dark) .markdown b,
+  html:not(.dark) .markdown h1,
+  html:not(.dark) .markdown h2,
+  html:not(.dark) .markdown h3,
+  html:not(.dark) .markdown h4,
+  html:not(.dark) .markdown h5,
+  html:not(.dark) .markdown h6,
+  html:not(.dark) .markdown .prose p,
+  html:not(.dark) .markdown .prose li,
+  html:not(.dark) .markdown .prose strong,
+  html:not(.dark) .markdown .prose b,
+  html:not(.dark) .markdown .prose h1,
+  html:not(.dark) .markdown .prose h2,
+  html:not(.dark) .markdown .prose h3,
+  html:not(.dark) .markdown .prose h4,
+  html:not(.dark) .markdown .prose h5,
+  html:not(.dark) .markdown .prose h6 {
     color: #000000 !important;
+  }
+
+  /* Tambahan untuk memastikan semua elemen di dalam .markdown ikut */
+  .markdown * {
+    color: inherit !important;
   }
 </style>
