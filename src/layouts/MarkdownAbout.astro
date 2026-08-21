@@ -29,6 +29,14 @@ const { frontmatter } = Astro.props;
     <article
       class="flex flex-col gap-8 max-w-3xl max-md:w-full pb-10 pt-8 mt-8 max-sm:mt-0 px-14 max-md:px-10 max-sm:px-6 dark:bg-transparent bg-white dark:border-0 border border-neutral-100 rounded-2xl"
     >
+      <!-- HEADER "About Me" di pojok kiri atas -->
+      <div class="w-full">
+        <h1 class="text-3xl font-black text-blacktext dark:text-white">
+          About Me
+        </h1>
+      </div>
+
+      <!-- FOTO & NAMA -->
       <div class="w-full h-auto mb-4 mx-auto" id="#">
         <div
           class="transition-all justify-center w-full gap-8 max-md:gap-3 max-lg:gap-2 flex flex-col items-center z-0 relative dark:from-mint-950 dark:to-zinc-950"
@@ -38,7 +46,7 @@ const { frontmatter } = Astro.props;
               class="group-hover:scale-105 relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-full dark:p-[1.5px] p-[2px] transition-all duration-500"
             >
               <div
-                class="absolute inset-0 h-full w-full rounded-fullfrom-transparent to-riptide-500 dark:from-transparent f dark:to-mint-300 animate-rotate-border bg-conic/[from_var(--border-angle)]"
+                class="absolute inset-0 h-full w-full rounded-full from-transparent to-riptide-500 dark:from-transparent dark:to-mint-300 animate-rotate-border bg-conic/[from_var(--border-angle)]"
               >
               </div>
               <div class="relative z-20 flex w-full rounded-full bg-mint-900">
@@ -56,30 +64,16 @@ const { frontmatter } = Astro.props;
             </div>
           </div>
 
-          <div class="w-full flex flex-col justify-center gap-4 max-md:gap-2">
+          <!-- HANYA NAMA (tanpa deskripsi dobel) -->
+          <div class="w-full flex flex-col justify-center gap-2 max-md:gap-2">
             <div class="text-center">
               <Heading textGradient="Izhatya Widad Audifa" />
             </div>
-
-            <p
-              class="text-lg max-xl:text-base text-blacktext dark:text-gray-200 mb-0 leading-8 font-semibold"
-            >
-              <b
-                class="bg-linear-to-r from-riptide-400 to-mint-500 dark:to-mint-200 dark:from-riptide-300 text-transparent bg-clip-text"
-                >Network Security Engineer</b
-              > with <b
-                class="bg-linear-to-r from-riptide-400 to-mint-500 dark:to-mint-200 dark:from-riptide-300 text-transparent bg-clip-text"
-                >NSE 1-3</b
-              >, passionate about cybersecurity and protecting IT infrastructures from complex cyber threats. Experienced in monitoring, analyzing, and strengthening network security using various tools and technologies. 🚀🔒
-            </p>
           </div>
         </div>
       </div>
-      <div class="flex gap-4 items-center">
-        <Heading text="About" textGradient="me" />
-      </div>
 
-      <!-- KONTEN MARKDOWN -->
+      <!-- KONTEN MARKDOWN (dari about-me.md) -->
       <div class="markdown" id="content">
         <slot />
       </div>
@@ -99,68 +93,74 @@ const { frontmatter } = Astro.props;
   <Contact />
 </Layout>
 
-<!-- CSS SUPER PASTI: PAKSA WARNA TABEL -->
+<!-- CSS UNTUK WARNA TABEL DI DARK MODE -->
 <style is:global>
-  /* DARK MODE: semua teks di tabel menjadi PUTIH */
-  html.dark .markdown table td,
-  html.dark .markdown table th,
-  html.dark .markdown table tr,
-  html.dark .markdown table tbody,
-  html.dark .markdown table thead,
-  html.dark .markdown table,
-  html.dark .markdown table * {
+  html.dark #content table,
+  html.dark #content table td,
+  html.dark #content table th,
+  html.dark #content table tr,
+  html.dark #content table tbody,
+  html.dark #content table thead,
+  html.dark #content table * {
     color: #e5e7eb !important;
   }
 
-  html.dark .markdown table th {
+  html.dark #content table th {
     background-color: #1f2937 !important;
     color: #f3f4f6 !important;
   }
 
-  html.dark .markdown table td {
+  html.dark #content table td {
     color: #e5e7eb !important;
   }
 
-  html.dark .markdown table td,
-  html.dark .markdown table th {
+  html.dark #content table td,
+  html.dark #content table th {
     border-color: #374151 !important;
   }
 
-  /* LIGHT MODE: semua teks di tabel menjadi HITAM */
-  html:not(.dark) .markdown table td,
-  html:not(.dark) .markdown table th,
-  html:not(.dark) .markdown table tr,
-  html:not(.dark) .markdown table tbody,
-  html:not(.dark) .markdown table thead,
-  html:not(.dark) .markdown table,
-  html:not(.dark) .markdown table * {
+  html:not(.dark) #content table,
+  html:not(.dark) #content table td,
+  html:not(.dark) #content table th,
+  html:not(.dark) #content table tr,
+  html:not(.dark) #content table tbody,
+  html:not(.dark) #content table thead,
+  html:not(.dark) #content table * {
     color: #000000 !important;
   }
 
-  /* PASTIKAN SEMUA ELEMEN DI DALAM .markdown memiliki warna yang sesuai */
-  html.dark .markdown p,
-  html.dark .markdown li,
-  html.dark .markdown h1,
-  html.dark .markdown h2,
-  html.dark .markdown h3,
-  html.dark .markdown h4,
-  html.dark .markdown h5,
-  html.dark .markdown h6,
-  html.dark .markdown strong,
-  html.dark .markdown b {
+  html.dark #content p,
+  html.dark #content li,
+  html.dark #content h1,
+  html.dark #content h2,
+  html.dark #content h3,
+  html.dark #content h4,
+  html.dark #content h5,
+  html.dark #content h6,
+  html.dark #content strong,
+  html.dark #content b {
     color: #e5e7eb !important;
   }
 
-  html:not(.dark) .markdown p,
-  html:not(.dark) .markdown li,
-  html:not(.dark) .markdown h1,
-  html:not(.dark) .markdown h2,
-  html:not(.dark) .markdown h3,
-  html:not(.dark) .markdown h4,
-  html:not(.dark) .markdown h5,
-  html:not(.dark) .markdown h6,
-  html:not(.dark) .markdown strong,
-  html:not(.dark) .markdown b {
+  html:not(.dark) #content p,
+  html:not(.dark) #content li,
+  html:not(.dark) #content h1,
+  html:not(.dark) #content h2,
+  html:not(.dark) #content h3,
+  html:not(.dark) #content h4,
+  html:not(.dark) #content h5,
+  html:not(.dark) #content h6,
+  html:not(.dark) #content strong,
+  html:not(.dark) #content b {
     color: #000000 !important;
+  }
+
+  html.dark #content h1,
+  html.dark #content h2,
+  html.dark #content h3,
+  html.dark #content h4,
+  html.dark #content h5,
+  html.dark #content h6 {
+    color: #f3f4f6 !important;
   }
 </style>
