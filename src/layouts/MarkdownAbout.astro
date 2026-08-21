@@ -99,10 +99,17 @@ const { frontmatter } = Astro.props;
   <Contact />
 </Layout>
 
-<!-- CSS FINAL - MEMAKSA WARNA TABEL DI DARK MODE -->
+<!-- CSS YANG SANGAT KUAT UNTUK MEMAKSA WARNA TABEL -->
 <style>
-  /* DARK MODE: semua teks di tabel menjadi PUTIH */
-  html.dark .markdown table,
+  /* DARK MODE: semua elemen di dalam .markdown menjadi putih */
+  html.dark .markdown * {
+    color: #e5e7eb !important;
+  }
+
+  html.dark .markdown table {
+    color: #e5e7eb !important;
+  }
+
   html.dark .markdown table td,
   html.dark .markdown table th,
   html.dark .markdown table tr,
@@ -126,27 +133,6 @@ const { frontmatter } = Astro.props;
     border-color: #374151 !important;
   }
 
-  /* DARK MODE: semua teks di luar tabel juga putih */
-  html.dark .markdown p,
-  html.dark .markdown li,
-  html.dark .markdown h1,
-  html.dark .markdown h2,
-  html.dark .markdown h3,
-  html.dark .markdown h4,
-  html.dark .markdown h5,
-  html.dark .markdown h6,
-  html.dark .markdown strong,
-  html.dark .markdown b,
-  html.dark .markdown em,
-  html.dark .markdown i,
-  html.dark .markdown span,
-  html.dark .markdown div,
-  html.dark .markdown blockquote,
-  html.dark .markdown code,
-  html.dark .markdown pre {
-    color: #e5e7eb !important;
-  }
-
   html.dark .markdown h1,
   html.dark .markdown h2,
   html.dark .markdown h3,
@@ -156,8 +142,15 @@ const { frontmatter } = Astro.props;
     color: #f3f4f6 !important;
   }
 
-  /* LIGHT MODE: semua teks di tabel menjadi HITAM */
-  html:not(.dark) .markdown table,
+  /* LIGHT MODE: semua elemen di dalam .markdown menjadi hitam */
+  html:not(.dark) .markdown * {
+    color: #000000 !important;
+  }
+
+  html:not(.dark) .markdown table {
+    color: #000000 !important;
+  }
+
   html:not(.dark) .markdown table td,
   html:not(.dark) .markdown table th,
   html:not(.dark) .markdown table tr,
@@ -167,10 +160,6 @@ const { frontmatter } = Astro.props;
     color: #000000 !important;
   }
 
-  html:not(.dark) .markdown p,
-  html:not(.dark) .markdown li,
-  html:not(.dark) .markdown strong,
-  html:not(.dark) .markdown b,
   html:not(.dark) .markdown h1,
   html:not(.dark) .markdown h2,
   html:not(.dark) .markdown h3,
@@ -178,10 +167,5 @@ const { frontmatter } = Astro.props;
   html:not(.dark) .markdown h5,
   html:not(.dark) .markdown h6 {
     color: #000000 !important;
-  }
-
-  /* PASTI: semua elemen di dalam .markdown mewarisi warna */
-  .markdown * {
-    color: inherit !important;
   }
 </style>
