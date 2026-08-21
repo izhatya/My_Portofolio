@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import HeroIndex from "../components/portfolio/HeroIndex.astro";
 import Experience from "../components/portfolio/Experience.astro";
 import Contact from "../components/portfolio/Contact.astro";
-// import ListProjects from "../components/portfolio/ListProjects.astro"; // DIHAPUS
+import { Icon } from "astro-icon/components"; // <-- TAMBAHKAN INI
 import { getCollection } from "astro:content";
 
 const [staticData] = await getCollection("staticData");
@@ -17,6 +17,5 @@ const { pageTitle, pageDescription, OGImage } = staticData.data;
 >
   <HeroIndex />
   <Experience />
-  <!-- <ListProjects /> DIHAPUS -->
   <Contact />
 </Layout>
