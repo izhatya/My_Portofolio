@@ -18,81 +18,59 @@ Kota Bogor, Jawa Barat, Indonesia
 
 ## Ringkasan
 
-Saya adalah seorang profesional di bidang **network security** dengan pengalaman dalam melindungi infrastruktur IT dari ancaman siber yang kompleks dan terus berkembang. Terampil dalam memonitor, menganalisis, dan memperkuat keamanan jaringan menggunakan berbagai tools dan teknologi, termasuk **Fortinet**, **SonicWALL**, **Safetica**, dan **ESET**.
-
-Saya memiliki pemahaman yang solid tentang **firewall, IDS/IPS, enkripsi, dan protokol keamanan**, dengan keahlian terbukti dalam menerapkan strategi mitigasi ancaman yang efektif. Saya selalu mengikuti perkembangan terbaru di bidang cybersecurity untuk membantu organisasi memastikan sistem mereka tetap aman dan tangguh terhadap potensi serangan.
+Network Security Engineer dengan pengalaman dalam melindungi infrastruktur IT dari ancaman siber. Terampil dalam monitoring, analisis, dan penguatan keamanan jaringan menggunakan **Fortinet**, **SonicWALL**, **Safetica**, dan **ESET**. Memiliki pemahaman solid tentang firewall, IDS/IPS, enkripsi, dan protokol keamanan.
 
 ---
 
 ## Pengalaman Kerja
 
-### GreenBox Data Center
-**Information Technology Technician** | *Full-time*
-*September 2023 - Juni 2026 (2 tahun 10 bulan) | Bogor, Jawa Barat*
+### GreenBox Data Center | Information Technology Technician
+*Sep 2023 - Jun 2026 (2 thn 10 bln) | Bogor, Jawa Barat*
 
-Sebagai Information Technology Technician di data center, saya bertanggung jawab atas pemeliharaan dan dukungan berbagai sistem TI dan infrastruktur, memastikan kinerja optimal dan uptime sistem kritis. Peran saya melibatkan troubleshooting masalah hardware, manajemen operasi server, dan memastikan operasi sumber daya teknologi yang efisien di lingkungan data center.
-
-**Tanggung jawab utama:**
-- Memberikan dukungan teknis untuk perangkat keras dan jaringan di data center, memastikan resolusi cepat untuk meminimalkan downtime.
-- Menginstal, mengkonfigurasi, dan memelihara server, sistem penyimpanan, dan perangkat jaringan untuk memastikan kinerja dan keandalan optimal.
-- Melakukan pemeliharaan dan perbaikan rutin pada peralatan data center, termasuk server dan perangkat jaringan.
-- Membantu dalam penyiapan dan deployment hardware baru serta upgrade, memastikan integrasi yang lancar dengan sistem yang ada.
-- Memantau kinerja data center dan kondisi lingkungan, memastikan kepatuhan terhadap standar keselamatan dan operasional.
-- Mendokumentasikan proses, konfigurasi, dan solusi teknis untuk membangun basis pengetahuan yang komprehensif.
+- Dukungan teknis hardware & jaringan di data center untuk meminimalkan downtime.
+- Instalasi, konfigurasi, dan pemeliharaan server, storage, dan perangkat jaringan.
+- Pemeliharaan rutin peralatan data center dan deployment hardware baru.
+- Monitoring kinerja data center dan dokumentasi teknis.
 
 **Skills:** TCP/IP, Log Analysis, Server Management, Hardware Troubleshooting
 
 ---
 
-### AVASO Technology Solutions
-**Freelance Network Security**
-*Maret 2024 - Maret 2026 (2 tahun 1 bulan) | Indonesia (Hybrid)*
+### AVASO Technology Solutions | Freelance Network Security
+*Mar 2024 - Mar 2026 (2 thn 1 bln) | Indonesia (Hybrid)*
 
-Bekerja sebagai freelance di bidang network security, memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
-
----
-
-### Softwarekantor
-**Network Security Engineer** | *Full-time*
-*Desember 2020 - September 2023 (2 tahun 10 bulan) | Semarang, Jawa Tengah*
-
-Sebagai Network Security Service Engineer, saya memberikan solusi keamanan komprehensif dan dukungan kepada klien, memastikan integritas dan perlindungan infrastruktur jaringan mereka. Tanggung jawab utama termasuk mengimplementasikan, mengelola, dan memonitor sistem keamanan serta merespons potensi ancaman dan insiden secara proaktif.
-
-**Tanggung jawab utama:**
-- Mengimplementasikan dan mengkonfigurasi solusi keamanan, termasuk firewall (**SonicWALL**, **Fortinet**), intrusion detection systems (IDS), dan antivirus (**ESET**) yang disesuaikan dengan kebutuhan klien.
-- Melakukan penilaian keamanan dan pemindaian kerentanan secara rutin untuk mengidentifikasi dan memitigasi potensi risiko di jaringan klien.
-- Memonitor jaringan klien secara real-time untuk mendeteksi dan merespons insiden keamanan, memastikan dampak minimal pada operasi.
-- Berkolaborasi dengan klien untuk mengembangkan dan menerapkan kebijakan keamanan dan praktik terbaik yang efektif.
-- Memberikan dukungan teknis dan panduan kepada klien tentang masalah terkait keamanan.
-- Berpartisipasi dalam aktivitas respons insiden, termasuk investigasi dan remediasi pelanggaran keamanan.
-
-**Skills:** SonicWALL, Safetica, Network Security, Firewall, IDS/IPS, Vulnerability Assessment
+Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-### PT. Identity Indonesia
-**Administrative Officer** | *Full-time*
-*Oktober 2019 - Oktober 2020 (1 tahun 1 bulan) | Semarang, Jawa Tengah*
+### Softwarekantor | Network Security Engineer
+*Des 2020 - Sep 2023 (2 thn 10 bln) | Semarang, Jawa Tengah*
 
-**Tanggung jawab utama:**
-- Mengelola perlengkapan kantor, menjadwalkan rapat, dan memelihara peralatan kantor untuk memastikan lingkungan kerja yang produktif.
-- Mengorganisir dan memelihara file, catatan, dan dokumentasi untuk memastikan akurasi data dan kepatuhan terhadap standar organisasi.
-- Mengkoordinasikan pengaturan perjalanan dan perencanaan acara untuk staf dan pemangku kepentingan.
+- Implementasi dan konfigurasi solusi keamanan: **SonicWALL**, **Fortinet**, IDS/IPS, dan antivirus **ESET**.
+- Penilaian keamanan dan vulnerability scan secara rutin.
+- Monitoring jaringan real-time dan respons insiden keamanan.
+- Kolaborasi dengan klien untuk kebijakan keamanan dan best practices.
+
+**Skills:** SonicWALL, Safetica, Firewall, IDS/IPS, Vulnerability Assessment
 
 ---
 
-### CV. Karya Jasa Mandiri
-**Network Operations Center (NOC) Technician** | *Full-time*
-*Juni 2017 - Agustus 2019 (2 tahun 3 bulan) | Pemalang, Jawa Tengah (Hybrid)*
+### PT. Identity Indonesia | Administrative Officer
+*Okt 2019 - Okt 2020 (1 thn 1 bln) | Semarang, Jawa Tengah*
 
-Sebagai NOC Technician, saya bertanggung jawab untuk memonitor dan memelihara infrastruktur jaringan untuk memastikan kinerja optimal dan uptime sistem kritis. Peran saya melibatkan pemantauan kinerja jaringan real-time, troubleshooting masalah, dan koordinasi respons cepat terhadap gangguan dan pemadaman.
+- Pengelolaan perlengkapan kantor, penjadwalan rapat, dan pemeliharaan peralatan.
+- Pengorganisasian file, catatan, dan dokumentasi.
+- Koordinasi perjalanan dan perencanaan acara.
 
-**Tanggung jawab utama:**
-- Memantau metrik kinerja jaringan, seperti penggunaan bandwidth, latensi, dan ketersediaan sistem, untuk mengidentifikasi dan mengatasi potensi masalah sebelum berdampak pada operasi bisnis.
-- Memecahkan dan menyelesaikan masalah jaringan terkait router, switch, firewall, dan perangkat jaringan lainnya.
-- Berkolaborasi dengan tim IT lain untuk mengimplementasikan upgrade, konfigurasi, dan patch jaringan, memastikan downtime minimal dan keamanan maksimum.
-- Mengelola alert dan insiden melalui sistem ticketing, mendokumentasikan resolusi, dan melakukan eskalasi jika diperlukan.
-- Memastikan ketersediaan jaringan 24/7 dengan berpartisipasi dalam rotasi panggilan dan memberikan pembaruan tepat waktu tentang status insiden kepada pemangku kepentingan.
+---
+
+### CV. Karya Jasa Mandiri | NOC Technician
+*Jun 2017 - Agu 2019 (2 thn 3 bln) | Pemalang, Jawa Tengah (Hybrid)*
+
+- Monitoring metrik kinerja jaringan (bandwidth, latensi, availability).
+- Troubleshooting router, switch, firewall, dan perangkat jaringan.
+- Kolaborasi tim untuk upgrade, konfigurasi, dan patch jaringan.
+- Pengelolaan alert dan insiden melalui ticketing system, rotasi panggilan 24/7.
 
 **Skills:** TCP/IP, Linux, Network Monitoring, Troubleshooting
 
@@ -133,46 +111,28 @@ Sebagai NOC Technician, saya bertanggung jawab untuk memonitor dan memelihara in
 
 ## Proyek
 
-### Fortigate Installation and Configuration Training Bank Boyolali
-*Maret 2023*
-
-Instalasi dan konfigurasi Fortigate untuk keamanan jaringan di Bank Boyolali. Meliputi deployment firewall, policy configuration, dan training tim IT internal.
-
-**Skills:** Fortinet, Network Security, Firewall Configuration
+### Fortigate Installation & Configuration Training Bank Boyolali
+*Maret 2023* — Instalasi dan konfigurasi Fortigate untuk keamanan jaringan Bank Boyolali. Deployment firewall, policy configuration, dan training tim IT internal. **Skills:** Fortinet, Network Security, Firewall Configuration
 
 ---
 
 ### Training ESET Business RS Ortopedi Dr. Soeharso Surakarta
-*Maret 2023*
-
-Pelatihan dan implementasi solusi keamanan ESET Business untuk Rumah Sakit Ortopedi Dr. Soeharso Surakarta. Mencakup deployment endpoint protection dan training penggunaan.
-
-**Skills:** ESET, Network Security, Endpoint Protection
+*Maret 2023* — Pelatihan dan implementasi ESET Business untuk Rumah Sakit Ortopedi Dr. Soeharso Surakarta. Deployment endpoint protection dan training penggunaan. **Skills:** ESET, Network Security, Endpoint Protection
 
 ---
 
 ### POC Genians NAC RSUD Dr. Moewardi Surakarta
-*Februari 2023*
-
-Proof of Concept (POC) untuk implementasi Network Access Control (NAC) Genians di RSUD Dr. Moewardi Surakarta. Menguji efektivitas solusi NAC dalam mengontrol akses jaringan.
-
-**Skills:** Network Security, NAC, Genians
+*Februari 2023* — Proof of Concept Network Access Control (NAC) Genians di RSUD Dr. Moewardi Surakarta. Menguji efektivitas NAC dalam mengontrol akses jaringan. **Skills:** Network Security, NAC, Genians
 
 ---
 
 ## Volunteering
 
 ### Introduction Secpoint
-*Februari 2023 (1 bulan) | Softwarekantor*
-
-Pengenalan dan sosialisasi solusi keamanan Secpoint kepada tim dan klien. Berbagi pengetahuan tentang fitur dan implementasi Secpoint untuk keamanan jaringan.
-
----
+*Feb 2023 (1 bln) | Softwarekantor* — Pengenalan dan sosialisasi solusi keamanan Secpoint kepada tim dan klien.
 
 ### Introduction NGFW
-*Agustus 2023 (1 bulan) | Meta4sec*
-
-Pengenalan Next-Generation Firewall (NGFW) melalui live streaming. Memberikan edukasi tentang teknologi NGFW, fungsionalitas, dan manfaatnya bagi keamanan organisasi.
+*Agu 2023 (1 bln) | Meta4sec* — Pengenalan Next-Generation Firewall (NGFW) melalui live streaming.
 
 ---
 
