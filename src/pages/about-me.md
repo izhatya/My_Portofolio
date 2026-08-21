@@ -131,6 +131,7 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 - **Email**: [izhatyaaudifa123@gmail.com](mailto:izhatyaaudifa123@gmail.com)
 - **LinkedIn**: [linkedin.com/in/izhatya](https://www.linkedin.com/in/izhatya)
 - **GitHub**: [github.com/izhatya](https://github.com/izhatya)
+- **Instagram**: [instagram.com/i_zhaat](https://www.instagram.com/i_zhaat)
 
 ---
 
