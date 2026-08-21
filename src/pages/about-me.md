@@ -6,15 +6,6 @@ author: "Izhatya Widad Audifa"
 image:
   url: "/My_Portofolio/images/profile.jpg"
   alt: "Foto profil Izhatya Widad Audifa"
----
-
-# Izhatya Widad Audifa
-
-**Network Security Engineer | NSE 1-3 | Cyber Security Enthusiast**
-
-Kota Bogor, Jawa Barat, Indonesia
-
----
 
 ## 💼 Pengalaman Kerja
 
