@@ -16,13 +16,7 @@ Kota Bogor, Jawa Barat, Indonesia
 
 ---
 
-## Ringkasan
-
-Saya adalah seorang profesional di bidang **network security** dengan pengalaman dalam melindungi infrastruktur IT dari ancaman siber yang kompleks dan terus berkembang. Terampil dalam memonitor, menganalisis, dan memperkuat keamanan jaringan menggunakan berbagai tools dan teknologi, termasuk **Fortinet**, **SonicWALL**, **Safetica**, dan **ESET**. Saya memiliki pemahaman yang solid tentang **firewall, IDS/IPS, enkripsi, dan protokol keamanan**, dengan keahlian terbukti dalam menerapkan strategi mitigasi ancaman yang efektif. Saya selalu mengikuti perkembangan terbaru di bidang cybersecurity untuk membantu organisasi memastikan sistem mereka tetap aman dan tangguh terhadap potensi serangan.
-
----
-
-## Pengalaman Kerja
+## 💼 Pengalaman Kerja
 
 ### GreenBox Data Center | Information Technology Technician
 *Sep 2023 - Jun 2026 (2 thn 10 bln) | Bogor, Jawa Barat*
@@ -76,7 +70,7 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-## Sertifikasi & Lisensi
+## 🛡️ Sertifikasi & Lisensi
 
 | Sertifikasi | Penerbit | Tahun | Status |
 |-------------|----------|-------|--------|
@@ -96,7 +90,7 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-## Keahlian Teknis
+## 🛠️ Keahlian Teknis
 
 | Kategori | Keahlian |
 |----------|----------|
@@ -109,7 +103,7 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-## Proyek
+## 📁 Proyek
 
 ### Fortigate Installation & Configuration Training Bank Boyolali
 *Maret 2023* — Instalasi dan konfigurasi Fortigate untuk keamanan jaringan Bank Boyolali. Deployment firewall, policy configuration, dan training tim IT internal. **Skills:** Fortinet, Network Security, Firewall Configuration
@@ -122,7 +116,7 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-## Volunteering
+## 🤝 Volunteering
 
 ### Introduction Secpoint
 *Feb 2023 (1 bln) | Softwarekantor* — Pengenalan dan sosialisasi solusi keamanan Secpoint kepada tim dan klien.
@@ -132,7 +126,7 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-## Kontak
+## 📞 Kontak
 
 - **Email**: [izhatyaaudifa123@gmail.com](mailto:izhatyaaudifa123@gmail.com)
 - **LinkedIn**: [linkedin.com/in/izhatya](https://www.linkedin.com/in/izhatya)
