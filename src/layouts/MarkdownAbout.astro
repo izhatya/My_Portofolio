@@ -29,11 +29,9 @@ const { frontmatter } = Astro.props;
     <article
       class="flex flex-col gap-8 max-w-3xl max-md:w-full pb-10 pt-8 mt-8 max-sm:mt-0 px-14 max-md:px-10 max-sm:px-6 dark:bg-transparent bg-white dark:border-0 border border-neutral-100 rounded-2xl"
     >
-      <!-- HEADER "About Me" di pojok kiri atas -->
+      <!-- HEADER "About Me" BERWARNA GRADIEN di pojok kiri atas -->
       <div class="w-full">
-        <h1 class="text-3xl font-black text-blacktext dark:text-white">
-          About Me
-        </h1>
+        <Heading text="About" textGradient="Me" />
       </div>
 
       <!-- FOTO & NAMA -->
@@ -64,7 +62,7 @@ const { frontmatter } = Astro.props;
             </div>
           </div>
 
-          <!-- HANYA NAMA (tanpa deskripsi dobel) -->
+          <!-- NAMA -->
           <div class="w-full flex flex-col justify-center gap-2 max-md:gap-2">
             <div class="text-center">
               <Heading textGradient="Izhatya Widad Audifa" />
@@ -73,7 +71,7 @@ const { frontmatter } = Astro.props;
         </div>
       </div>
 
-      <!-- KONTEN MARKDOWN (dari about-me.md) -->
+      <!-- KONTEN MARKDOWN -->
       <div class="markdown" id="content">
         <slot />
       </div>
