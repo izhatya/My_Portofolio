@@ -99,29 +99,22 @@ const { frontmatter } = Astro.props;
   <Contact />
 </Layout>
 
-<!-- CSS YANG SANGAT KUAT UNTUK MEMAKSA WARNA TABEL -->
-<style>
-  /* DARK MODE: semua elemen di dalam .markdown menjadi putih */
-  html.dark .markdown * {
-    color: #e5e7eb !important;
-  }
-
-  html.dark .markdown table {
-    color: #e5e7eb !important;
-  }
-
+<!-- CSS SUPER PASTI: PAKSA WARNA TABEL -->
+<style is:global>
+  /* DARK MODE: semua teks di tabel menjadi PUTIH */
   html.dark .markdown table td,
   html.dark .markdown table th,
   html.dark .markdown table tr,
   html.dark .markdown table tbody,
   html.dark .markdown table thead,
-  html.dark .markdown table caption {
+  html.dark .markdown table,
+  html.dark .markdown table * {
     color: #e5e7eb !important;
   }
 
   html.dark .markdown table th {
-    color: #f3f4f6 !important;
     background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
   }
 
   html.dark .markdown table td {
@@ -133,39 +126,41 @@ const { frontmatter } = Astro.props;
     border-color: #374151 !important;
   }
 
-  html.dark .markdown h1,
-  html.dark .markdown h2,
-  html.dark .markdown h3,
-  html.dark .markdown h4,
-  html.dark .markdown h5,
-  html.dark .markdown h6 {
-    color: #f3f4f6 !important;
-  }
-
-  /* LIGHT MODE: semua elemen di dalam .markdown menjadi hitam */
-  html:not(.dark) .markdown * {
-    color: #000000 !important;
-  }
-
-  html:not(.dark) .markdown table {
-    color: #000000 !important;
-  }
-
+  /* LIGHT MODE: semua teks di tabel menjadi HITAM */
   html:not(.dark) .markdown table td,
   html:not(.dark) .markdown table th,
   html:not(.dark) .markdown table tr,
   html:not(.dark) .markdown table tbody,
   html:not(.dark) .markdown table thead,
-  html:not(.dark) .markdown table caption {
+  html:not(.dark) .markdown table,
+  html:not(.dark) .markdown table * {
     color: #000000 !important;
   }
 
+  /* PASTIKAN SEMUA ELEMEN DI DALAM .markdown memiliki warna yang sesuai */
+  html.dark .markdown p,
+  html.dark .markdown li,
+  html.dark .markdown h1,
+  html.dark .markdown h2,
+  html.dark .markdown h3,
+  html.dark .markdown h4,
+  html.dark .markdown h5,
+  html.dark .markdown h6,
+  html.dark .markdown strong,
+  html.dark .markdown b {
+    color: #e5e7eb !important;
+  }
+
+  html:not(.dark) .markdown p,
+  html:not(.dark) .markdown li,
   html:not(.dark) .markdown h1,
   html:not(.dark) .markdown h2,
   html:not(.dark) .markdown h3,
   html:not(.dark) .markdown h4,
   html:not(.dark) .markdown h5,
-  html:not(.dark) .markdown h6 {
+  html:not(.dark) .markdown h6,
+  html:not(.dark) .markdown strong,
+  html:not(.dark) .markdown b {
     color: #000000 !important;
   }
 </style>
