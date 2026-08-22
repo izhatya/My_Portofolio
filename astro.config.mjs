@@ -3,10 +3,8 @@ import preact from "@astrojs/preact";
 import icon from "astro-icon";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://izhatya.github.io',
-  base: '/My_Portofolio',
+  site: 'https://izhatya.my.id',
   vite: {
     plugins: [tailwindcss()],
   },
