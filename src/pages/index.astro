@@ -1,10 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroIndex from "../components/portfolio/HeroIndex.astro";
-import ListProjects from "../components/portfolio/ListProjects.astro";
-// Experience & Contact dinonaktifkan sementara (masih bermasalah)
-// import Experience from "../components/portfolio/Experience.astro";
-// import Contact from "../components/portfolio/Contact.astro";
 import { getCollection } from "astro:content";
 
 const [staticData] = await getCollection("staticData");
@@ -17,7 +13,4 @@ const { pageTitle, pageDescription, OGImage } = staticData.data;
   ogimage={{ alt: OGImage.alt, url: OGImage.url }}
 >
   <HeroIndex />
-  <ListProjects />
-  <!-- <Experience /> -->
-  <!-- <Contact /> -->
 </Layout>
