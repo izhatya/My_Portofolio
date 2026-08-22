@@ -35,6 +35,11 @@ const baseClasses = {
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    // Fungsi untuk normalisasi path (hilangkan trailing slash dan case)
+    function normalizePath(p) {
+      return p.replace(/\/$/, "").toLowerCase();
+    }
+
     const isHome = window.location.pathname === "/";
 
     const linkClasses = {
@@ -60,14 +65,17 @@ const baseClasses = {
     }
 
     function updateActiveLink() {
-      const currentPath = window.location.pathname;
+      const currentPath = normalizePath(window.location.pathname);
       const currentHash = window.location.hash
         ? `#${window.location.hash.substring(1)}`
         : "";
 
       document.querySelectorAll("nav a").forEach((link) => {
-        const path = link.getAttribute("data-path");
-        toggleLinkClasses(link, path === currentPath || path === currentHash);
+        const rawPath = link.getAttribute("data-path") || "";
+        const normalizedPath = normalizePath(rawPath);
+        // Bandingkan path dan hash
+        const isActive = normalizedPath === currentPath || normalizedPath === currentHash;
+        toggleLinkClasses(link, isActive);
       });
     }
 
@@ -90,7 +98,10 @@ const baseClasses = {
             if (sectionId) {
               navLinks.forEach((link) => {
                 const path = link.getAttribute("data-path");
-                toggleLinkClasses(link, path === `/#${sectionId}`);
+                if (path) {
+                  const normalizedPath = normalizePath(path);
+                  toggleLinkClasses(link, normalizedPath === `/#${sectionId}`);
+                }
               });
             }
           }
