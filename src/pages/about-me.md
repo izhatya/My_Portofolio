@@ -115,6 +115,9 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 ### Implementasi Fortigate Firewall & Site-to-Site VPN (Instalasi di Perusahaan Properti Cikarang)
 *April 2026* — Proyek greenfield deployment Fortigate NGFW untuk memperbarui sistem keamanan jaringan. Meliputi instalasi dari awal, konfigurasi keamanan (firewall, web filtering, IPS), dan implementasi Site-to-Site IPsec VPN untuk menghubungkan jaringan lokal Indonesia dengan Head Office di Taiwan secara aman melalui jalur publik. Selesai dengan simulasi failover, uji stabilitas tunneling, dan dokumentasi teknis. **Skills:** Fortinet, Network Security, IPsec VPN, Firewall Configuration
 
+### Implementasi Solusi Penyimpanan Terpusat Synology NAS di RSUD Jepara
+*Juli 2022* — Proyek penyediaan solusi penyimpanan data terpusat, aman, dan berkapasitas besar menggunakan ekosistem Synology untuk mendukung operasional harian RSUD di Jepara, Jawa Tengah. Meliputi instalasi awal perangkat keras, pembaruan Synology DSM, optimalisasi jaringan, implementasi RAID/SHR untuk proteksi data, penyusunan struktur direktori dan ACL untuk keamanan data pasien, serta konfigurasi protokol SMB/NFS yang disesuaikan dengan lingkungan Windows/Mac/Linux. **Skills:** Synology NAS, Storage, RAID/SHR, SMB/NFS, ACL
+
 ---
 
 ## Volunteering
