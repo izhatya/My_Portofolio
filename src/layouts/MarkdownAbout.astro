@@ -29,12 +29,10 @@ const { frontmatter } = Astro.props;
     <article
       class="flex flex-col gap-8 max-w-3xl max-md:w-full pb-10 pt-8 mt-8 max-sm:mt-0 px-14 max-md:px-10 max-sm:px-6 dark:bg-transparent bg-white dark:border-0 border border-neutral-100 rounded-2xl"
     >
-      <!-- HEADER "About Me" BERWARNA GRADIEN di pojok kiri atas -->
       <div class="w-full">
         <Heading text="About" textGradient="Me" />
       </div>
 
-      <!-- FOTO & NAMA -->
       <div class="w-full h-auto mb-4 mx-auto" id="#">
         <div
           class="transition-all justify-center w-full gap-8 max-md:gap-3 max-lg:gap-2 flex flex-col items-center z-0 relative dark:from-mint-950 dark:to-zinc-950"
@@ -49,11 +47,11 @@ const { frontmatter } = Astro.props;
               </div>
               <div class="relative z-20 flex w-full rounded-full bg-mint-900">
                 <div
-                  class="w-full aspect-square rounded-full bg-[url(/My_Portofolio/images/profile.jpg)] bg-center bg-cover"
+                  class="w-full aspect-square rounded-full bg-[url(/images/profile.jpg)] bg-center bg-cover"
                   aria-label="Foto profil Izhatya Widad Audifa"
                 >
                   <a
-                    href="/My_Portofolio/about-me"
+                    href="/about-me"
                     class="flex h-full w-full"
                     aria-label="View about me page"
                   ></a>
@@ -62,7 +60,6 @@ const { frontmatter } = Astro.props;
             </div>
           </div>
 
-          <!-- NAMA -->
           <div class="w-full flex flex-col justify-center gap-2 max-md:gap-2">
             <div class="text-center">
               <Heading textGradient="Izhatya Widad Audifa" />
@@ -71,7 +68,6 @@ const { frontmatter } = Astro.props;
         </div>
       </div>
 
-      <!-- KONTEN MARKDOWN -->
       <div class="markdown" id="content">
         <slot />
       </div>
@@ -91,7 +87,6 @@ const { frontmatter } = Astro.props;
   <Contact />
 </Layout>
 
-<!-- CSS UNTUK WARNA TABEL DI DARK MODE -->
 <style is:global>
   html.dark #content table,
   html.dark #content table td,
@@ -102,21 +97,17 @@ const { frontmatter } = Astro.props;
   html.dark #content table * {
     color: #e5e7eb !important;
   }
-
   html.dark #content table th {
     background-color: #1f2937 !important;
     color: #f3f4f6 !important;
   }
-
   html.dark #content table td {
     color: #e5e7eb !important;
   }
-
   html.dark #content table td,
   html.dark #content table th {
     border-color: #374151 !important;
   }
-
   html:not(.dark) #content table,
   html:not(.dark) #content table td,
   html:not(.dark) #content table th,
@@ -126,7 +117,6 @@ const { frontmatter } = Astro.props;
   html:not(.dark) #content table * {
     color: #000000 !important;
   }
-
   html.dark #content p,
   html.dark #content li,
   html.dark #content h1,
@@ -139,7 +129,6 @@ const { frontmatter } = Astro.props;
   html.dark #content b {
     color: #e5e7eb !important;
   }
-
   html:not(.dark) #content p,
   html:not(.dark) #content li,
   html:not(.dark) #content h1,
@@ -152,7 +141,6 @@ const { frontmatter } = Astro.props;
   html:not(.dark) #content b {
     color: #000000 !important;
   }
-
   html.dark #content h1,
   html.dark #content h2,
   html.dark #content h3,
