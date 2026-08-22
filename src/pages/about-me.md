@@ -16,22 +16,24 @@ Saya adalah seorang profesional di bidang **network security** dengan pengalaman
 
 ## Pengalaman Kerja
 
-### GreenBox Data Center | Information Technology Technician
-*Sep 2023 - Jun 2026 (2 thn 10 bln) | Bogor, Jawa Barat*
+### CV. Karya Jasa Mandiri | NOC Technician
+*Jun 2017 - Agu 2019 (2 thn 3 bln) | Pemalang, Jawa Tengah (Hybrid)*
 
-- Dukungan teknis hardware & jaringan di data center untuk meminimalkan downtime.
-- Instalasi, konfigurasi, dan pemeliharaan server, storage, dan perangkat jaringan.
-- Pemeliharaan rutin peralatan data center dan deployment hardware baru.
-- Monitoring kinerja data center dan dokumentasi teknis.
+- Monitoring metrik kinerja jaringan (bandwidth, latensi, availability).
+- Troubleshooting router, switch, firewall, dan perangkat jaringan.
+- Kolaborasi tim untuk upgrade, konfigurasi, dan patch jaringan.
+- Pengelolaan alert dan insiden melalui ticketing system, rotasi panggilan 24/7.
 
-**Skills:** TCP/IP, Log Analysis, Server Management, Hardware Troubleshooting
+**Skills:** TCP/IP, Linux, Network Monitoring, Troubleshooting
 
 ---
 
-### AVASO Technology Solutions | Freelance Network Security
-*Mar 2024 - Mar 2026 (2 thn 1 bln) | Indonesia (Hybrid)*
+### PT. Identity Indonesia | Administrative Officer
+*Okt 2019 - Okt 2020 (1 thn 1 bln) | Semarang, Jawa Tengah*
 
-Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
+- Pengelolaan perlengkapan kantor, penjadwalan rapat, dan pemeliharaan peralatan.
+- Pengorganisasian file, catatan, dan dokumentasi.
+- Koordinasi perjalanan dan perencanaan acara.
 
 ---
 
@@ -47,24 +49,40 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-### PT. Identity Indonesia | Administrative Officer
-*Okt 2019 - Okt 2020 (1 thn 1 bln) | Semarang, Jawa Tengah*
+### AVASO Technology Solutions | Freelance Network Security
+*Mar 2024 - Mar 2026 (2 thn 1 bln) | Indonesia (Hybrid)*
 
-- Pengelolaan perlengkapan kantor, penjadwalan rapat, dan pemeliharaan peralatan.
-- Pengorganisasian file, catatan, dan dokumentasi.
-- Koordinasi perjalanan dan perencanaan acara.
+Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ---
 
-### CV. Karya Jasa Mandiri | NOC Technician
-*Jun 2017 - Agu 2019 (2 thn 3 bln) | Pemalang, Jawa Tengah (Hybrid)*
+### GreenBox Data Center | Information Technology Technician
+*Sep 2023 - Jun 2026 (2 thn 10 bln) | Bogor, Jawa Barat*
 
-- Monitoring metrik kinerja jaringan (bandwidth, latensi, availability).
-- Troubleshooting router, switch, firewall, dan perangkat jaringan.
-- Kolaborasi tim untuk upgrade, konfigurasi, dan patch jaringan.
-- Pengelolaan alert dan insiden melalui ticketing system, rotasi panggilan 24/7.
+- Dukungan teknis hardware & jaringan di data center untuk meminimalkan downtime.
+- Instalasi, konfigurasi, dan pemeliharaan server, storage, dan perangkat jaringan.
+- Pemeliharaan rutin peralatan data center dan deployment hardware baru.
+- Monitoring kinerja data center dan dokumentasi teknis.
 
-**Skills:** TCP/IP, Linux, Network Monitoring, Troubleshooting
+**Skills:** TCP/IP, Log Analysis, Server Management, Hardware Troubleshooting
+
+---
+
+### Hypernet Technologies | On-Site Network & Security Engineer (Fortinet Specialist)
+*Jun 2026 – Sekarang | Sudirman, Jakarta, Indonesia*
+
+Bertanggung jawab penuh sebagai Engineer On-Site dalam mengelola, memonitor, dan mengamankan infrastruktur jaringan berbasis Fortinet (SD-WAN, Secure VPN Tunneling, dan Network Security) untuk 30+ kantor cabang pelanggan korporat, memastikan availabilitas jaringan sesuai target SLA. Mengatasi eskalasi gangguan teknis tingkat lanjut dari L1, L2, hingga L3.
+
+**Tanggung jawab utama & pencapaian:**
+- Mengelola konektivitas, arsitektur routing, dan keamanan jaringan terdistribusi secara terpusat untuk 30+ cabang di seluruh Indonesia.
+- Mengonfigurasi, mengelola, dan memelihara koneksi IPsec VPN Tunneling (Hub-and-Spoke / Site-to-Site) untuk memastikan enkripsi data yang aman antar-cabang.
+- Memonitor metrik performa jaringan kritikal (SLA, latency, jitter, packet loss, traffic flow) serta mengoptimalkan path steering untuk efisiensi jalur data di atas jaringan overlay tunnel.
+- Menyelesaikan gangguan kompleks pada ekosistem Fortinet, termasuk interferensi overlay/underlay, kegagalan tunnel VPN, routing protocol, kebijakan failover, dan firewall rules.
+- Mengeksekusi modifikasi firewall policy berdasarkan permintaan formal; melakukan risk assessment dan validasi teknis sebelum implementasi untuk mitigasi risiko downtime.
+- Melakukan investigasi mendalam (Root Cause Analysis) untuk mendeteksi gangguan berulang melalui analisis log dan traffic security.
+- Mengembangkan manajemen visibilitas jaringan menggunakan FortiManager, FortiAnalyzer, dan PRTG, serta melakukan routine backup configuration.
+
+**Skills:** Fortinet, SD-WAN, IPsec VPN, FortiManager, FortiAnalyzer, PRTG, Network Security, Routing & Switching
 
 ---
 
@@ -94,8 +112,8 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 |----------|----------|
 | **Keamanan Jaringan** | Firewall (Fortinet, SonicWALL), IDS/IPS, Enkripsi, Protokol Keamanan |
 | **Analisis** | Mail Log Analysis, Vulnerability Assessment, Log Analysis |
-| **Tools** | Safetica, ESET, FortiGate |
-| **Infrastruktur** | Server, Storage, Router, Switch, TCP/IP |
+| **Tools** | Safetica, ESET, FortiGate, FortiManager, FortiAnalyzer, PRTG |
+| **Infrastruktur** | Server, Storage, Router, Switch, TCP/IP, SD-WAN |
 | **Monitoring** | NOC Operations, Real-time Monitoring, Network Performance |
 | **Sistem Operasi** | Linux, Windows Server |
 
@@ -112,11 +130,11 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 ### POC Genians NAC RSUD Dr. Moewardi Surakarta
 *Februari 2023* — Proof of Concept Network Access Control (NAC) Genians di RSUD Dr. Moewardi Surakarta. Menguji efektivitas NAC dalam mengontrol akses jaringan. **Skills:** Network Security, NAC, Genians
 
-### Implementasi Fortigate Firewall & Site-to-Site VPN (Instalasi di Perusahaan Properti Cikarang)
-*April 2026* — Proyek greenfield deployment Fortigate NGFW untuk memperbarui sistem keamanan jaringan. Meliputi instalasi dari awal, konfigurasi keamanan (firewall, web filtering, IPS), dan implementasi Site-to-Site IPsec VPN untuk menghubungkan jaringan lokal Indonesia dengan Head Office di Taiwan secara aman melalui jalur publik. Selesai dengan simulasi failover, uji stabilitas tunneling, dan dokumentasi teknis. **Skills:** Fortinet, Network Security, IPsec VPN, Firewall Configuration
-
 ### Implementasi Solusi Penyimpanan Terpusat Synology NAS di RSUD Jepara
 *Juli 2022* — Proyek penyediaan solusi penyimpanan data terpusat, aman, dan berkapasitas besar menggunakan ekosistem Synology untuk mendukung operasional harian RSUD di Jepara, Jawa Tengah. Meliputi instalasi awal perangkat keras, pembaruan Synology DSM, optimalisasi jaringan, implementasi RAID/SHR untuk proteksi data, penyusunan struktur direktori dan ACL untuk keamanan data pasien, serta konfigurasi protokol SMB/NFS yang disesuaikan dengan lingkungan Windows/Mac/Linux. **Skills:** Synology NAS, Storage, RAID/SHR, SMB/NFS, ACL
+
+### Implementasi Fortigate Firewall & Site-to-Site VPN (Instalasi di Perusahaan Properti Cikarang)
+*April 2026* — Proyek greenfield deployment Fortigate NGFW untuk memperbarui sistem keamanan jaringan. Meliputi instalasi dari awal, konfigurasi keamanan (firewall, web filtering, IPS), dan implementasi Site-to-Site IPsec VPN untuk menghubungkan jaringan lokal Indonesia dengan Head Office di Taiwan secara aman melalui jalur publik. Selesai dengan simulasi failover, uji stabilitas tunneling, dan dokumentasi teknis. **Skills:** Fortinet, Network Security, IPsec VPN, Firewall Configuration
 
 ---
 
