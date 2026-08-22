@@ -173,7 +173,7 @@ const {
       </article>
     </div>
 
-    <!-- Projects Preview (Tombol Toggle) -->
+    <!-- Projects Preview (Tombol Toggle + Auto Scroll) -->
     <div
       class="col-span-2 row-span-2 rounded-2xl bg-linear-to-r from-mint-300 dark:from-mint-600 to-mint-50 dark:to-mint-200/5 p-[.2rem] hover:to-mint-300/30 dark:hover:to-mint-600/30 md:col-start-1 md:row-start-1"
     >
@@ -216,7 +216,7 @@ const {
   </div>
 </section>
 
-<!-- SCRIPT TOGGLE PROYEK -->
+<!-- SCRIPT TOGGLE + AUTO SCROLL -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const toggleBtn = document.getElementById("toggleProjectsBtn");
@@ -238,6 +238,10 @@ const {
         if (isOpen) {
           projectsSection.style.maxHeight = projectsSection.scrollHeight + "px";
           projectsSection.style.opacity = "1";
+          // SCROLL OTOMATIS KE BAGIAN PROYEK
+          setTimeout(() => {
+            projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
         } else {
           projectsSection.style.maxHeight = "0";
           projectsSection.style.opacity = "0";
