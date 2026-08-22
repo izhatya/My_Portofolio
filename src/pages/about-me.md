@@ -4,7 +4,7 @@ title: "Izhatya Widad Audifa - Network Security Engineer"
 description: "Portofolio profesional Izhatya Widad Audifa, Network Security Engineer dengan pengalaman di data center, keamanan jaringan, dan sertifikasi Fortinet NSE 1-3, CCNA, dan Cyber Threat Management."
 author: "Izhatya Widad Audifa"
 image:
-  url: "/My_Portofolio/images/profile.jpg"
+  url: "/images/profile.jpg"
   alt: "Foto profil Izhatya Widad Audifa"
 ---
 
@@ -13,7 +13,6 @@ image:
 Saya adalah seorang profesional di bidang **network security** dengan pengalaman dalam melindungi infrastruktur IT dari ancaman siber yang kompleks dan terus berkembang. Terampil dalam memonitor, menganalisis, dan memperkuat keamanan jaringan menggunakan berbagai tools dan teknologi, termasuk **Fortinet**, **SonicWALL**, **Safetica**, dan **ESET**. Saya memiliki pemahaman yang solid tentang **firewall, IDS/IPS, enkripsi, dan protokol keamanan**, dengan keahlian terbukti dalam menerapkan strategi mitigasi ancaman yang efektif. Saya selalu mengikuti perkembangan terbaru di bidang cybersecurity untuk membantu organisasi memastikan sistem mereka tetap aman dan tangguh terhadap potensi serangan.
 
 ---
-
 
 ## Pengalaman Kerja
 
@@ -112,6 +111,9 @@ Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
 
 ### POC Genians NAC RSUD Dr. Moewardi Surakarta
 *Februari 2023* — Proof of Concept Network Access Control (NAC) Genians di RSUD Dr. Moewardi Surakarta. Menguji efektivitas NAC dalam mengontrol akses jaringan. **Skills:** Network Security, NAC, Genians
+
+### Implementasi Fortigate Firewall & Site-to-Site VPN (Instalasi di Perusahaan Properti Cikarang)
+*April 2026* — Proyek greenfield deployment Fortigate NGFW untuk memperbarui sistem keamanan jaringan. Meliputi instalasi dari awal, konfigurasi keamanan (firewall, web filtering, IPS), dan implementasi Site-to-Site IPsec VPN untuk menghubungkan jaringan lokal Indonesia dengan Head Office di Taiwan secara aman melalui jalur publik. Selesai dengan simulasi failover, uji stabilitas tunneling, dan dokumentasi teknis. **Skills:** Fortinet, Network Security, IPsec VPN, Firewall Configuration
 
 ---
 
