@@ -19,52 +19,60 @@ Saya adalah seorang profesional di bidang **network security** dengan pengalaman
 ### CV. Karya Jasa Mandiri | NOC Technician
 *Jun 2017 - Agu 2019 (2 thn 3 bln) | Pemalang, Jawa Tengah (Hybrid)*
 
-- Monitoring metrik kinerja jaringan (bandwidth, latensi, availability).
-- Troubleshooting router, switch, firewall, dan perangkat jaringan.
-- Kolaborasi tim untuk upgrade, konfigurasi, dan patch jaringan.
-- Pengelolaan alert dan insiden melalui ticketing system, rotasi panggilan 24/7.
+- Memonitor metrik kinerja jaringan secara proaktif (penggunaan bandwidth, latensi, stabilitas link, dan network availability) untuk memastikan reliabilitas layanan.
+- Melakukan diagnosis dan penyelesaian masalah teknis pada perangkat core network, termasuk router, switch, firewall, dan perangkat nirkabel.
+- Berkolaborasi dengan tim engineering dalam pemeliharaan rutin, pembaruan konfigurasi, serta penerapan patch software jaringan untuk memitigasi celah keamanan.
+- Mengelola sistem ticketing untuk pencatatan alur gangguan, melakukan eskalasi insiden kritis, serta berpartisipasi dalam jadwal piket on-call 24/7 untuk menjaga kepatuhan SLA.
 
-**Skills:** TCP/IP, Linux, Network Monitoring, Troubleshooting
+**Skills:** TCP/IP, Linux, Network Monitoring Tools, Hardware & Software Troubleshooting, Incident Management
 
 ---
 
 ### PT. Identity Indonesia | Administrative Officer
 *Okt 2019 - Okt 2020 (1 thn 1 bln) | Semarang, Jawa Tengah*
 
-- Pengelolaan perlengkapan kantor, penjadwalan rapat, dan pemeliharaan peralatan.
-- Pengorganisasian file, catatan, dan dokumentasi.
-- Koordinasi perjalanan dan perencanaan acara.
+- Mengelola ketersediaan inventaris operasional kantor, menyusun jadwal rapat internal/eksternal, serta memastikan seluruh fasilitas pendukung kerja berfungsi optimal.
+- Mengorganisasi, mengarsipkan, dan mengurus administrasi dokumen legalitas serta korespondensi perusahaan dengan akurasi dan kerahasiaan tinggi.
+- Mengatur akomodasi perjalanan dinas manajemen serta memimpin perencanaan dan eksekusi acara internal perusahaan agar berjalan efisien.
+
+**Skills:** Office Administration, Document Management, Vendor Coordination, Corporate Scheduling
 
 ---
 
 ### Softwarekantor | Network Security Engineer
 *Des 2020 - Sep 2023 (2 thn 10 bln) | Semarang, Jawa Tengah*
 
-- Implementasi dan konfigurasi solusi keamanan: **SonicWALL**, **Fortinet**, IDS/IPS, dan antivirus **ESET**.
-- Penilaian keamanan dan vulnerability scan secara rutin.
-- Monitoring jaringan real-time dan respons insiden keamanan.
-- Kolaborasi dengan klien untuk kebijakan keamanan dan best practices.
+- Merancang dan mengonfigurasi arsitektur keamanan jaringan menggunakan Fortinet (FortiGate sebagai kapabilitas utama), Sangfor Next-Generation Firewall, dan SonicWALL.
+- Mengelola dan menyebarkan sistem proteksi endpoint skala korporat (Kaspersky dan ESET Enterprise), solusi keamanan email (Vimanamail), serta mitigasi kebocoran data menggunakan Safetica DLP.
+- Mengonfigurasi dan memelihara sistem penyimpanan terpusat Synology NAS untuk manajemen data klien, serta melakukan penilaian kerentanan (vulnerability assessment) berkala menggunakan alat SecPoint.
+- Memonitor lalu lintas jaringan secara real-time untuk mendeteksi anomali, mengidentifikasi ancaman keamanan cyber, dan memimpin tindakan pemulihan insiden (incident response).
+- Bertindak sebagai konsultan teknis bagi klien dalam menyusun kebijakan keamanan informasi (security policy) dan menerapkan standardisasi cybersecurity best practices.
 
-**Skills:** SonicWALL, Safetica, Firewall, IDS/IPS, Vulnerability Assessment
-
----
-
-### AVASO Technology Solutions | Freelance Network Security
-*Mar 2024 - Mar 2026 (2 thn 1 bln) | Indonesia (Hybrid)*
-
-Memberikan solusi keamanan dan dukungan teknis kepada berbagai klien.
+**Skills:** FortiGate NGFW, Sangfor, SonicWALL, Synology NAS, Endpoint Security (Kaspersky & ESET), Safetica DLP, Vimanamail, SecPoint, Vulnerability Assessment
 
 ---
 
 ### GreenBox Data Center | Information Technology Technician
 *Sep 2023 - Jun 2026 (2 thn 10 bln) | Bogor, Jawa Barat*
 
-- Dukungan teknis hardware & jaringan di data center untuk meminimalkan downtime.
-- Instalasi, konfigurasi, dan pemeliharaan server, storage, dan perangkat jaringan.
-- Pemeliharaan rutin peralatan data center dan deployment hardware baru.
-- Monitoring kinerja data center dan dokumentasi teknis.
+- Bertanggung jawab penuh terhadap pemeliharaan fisik dan logika infrastruktur data center berbasis Application-Specific Integrated Circuits (ASIC) dan perangkat komputasi khusus untuk meminimalkan downtime.
+- Melakukan instalasi, provisioning, konfigurasi awal, dan pemantauan klaster perangkat ASIC berskala besar dengan densitas komputasi yang tinggi.
+- Memantau metrik utilitas daya, efisiensi distribusi listrik beban tinggi, serta sistem pendingin (thermal management) guna memastikan stabilitas operasional perangkat komputasi spesifik tersebut.
+- Mengidentifikasi kerusakan komponen keras pada papan sirkuit, melakukan pemeliharaan rutin, manajemen kabel (cable management), serta optimasi firmware perangkat untuk menjaga efisiensi kinerja.
+- Menganalisis log sistem secara berkala untuk mendeteksi penurunan performa perangkat keras, mencatat kegagalan hash board/chip, dan menyusun dokumentasi teknis pemeliharaan.
 
-**Skills:** TCP/IP, Log Analysis, Server Management, Hardware Troubleshooting
+**Skills:** ASIC, Dedicated Computing Systems, High-Density Hardware Deployment, Data Center Thermal & Power Management, Hardware Troubleshooting
+
+---
+
+### AVASO Technology Solutions | Freelance Network Security Engineer
+*Mar 2024 - Mar 2026 (2 thn 1 bln) | Indonesia (Hybrid)*
+
+- Bertindak sebagai konsultan independen yang menyediakan arsitektur solusi keamanan jaringan spesifik berdasarkan profil risiko dan kebutuhan unik dari berbagai klien industri.
+- Memberikan dukungan penanganan gangguan (advanced troubleshooting) tingkat L2/L3 dari jarak jauh maupun on-site untuk memulihkan kegagalan sistem keamanan kritis.
+- Melakukan evaluasi berkala terhadap konfigurasi firewall klien untuk memastikan efektivitas aturan akses (access rules) dan penguatan keamanan (network hardening).
+
+**Skills:** Independent Consulting, Network Hardening, Remote Systems Support, Firewall Optimization
 
 ---
 
@@ -110,11 +118,11 @@ Bertanggung jawab penuh sebagai Engineer On-Site dalam mengelola, memonitor, dan
 
 | Kategori | Keahlian |
 |----------|----------|
-| **Keamanan Jaringan** | Firewall (Fortinet, SonicWALL), IDS/IPS, Enkripsi, Protokol Keamanan |
-| **Analisis** | Mail Log Analysis, Vulnerability Assessment, Log Analysis |
-| **Tools** | Safetica, ESET, FortiGate, FortiManager, FortiAnalyzer, PRTG |
-| **Infrastruktur** | Server, Storage, Router, Switch, TCP/IP, SD-WAN |
-| **Monitoring** | NOC Operations, Real-time Monitoring, Network Performance |
+| **Keamanan Jaringan** | Firewall (Fortinet, SonicWALL, Sangfor), IDS/IPS, Enkripsi, Protokol Keamanan |
+| **Analisis** | Mail Log Analysis, Vulnerability Assessment, Log Analysis, Root Cause Analysis |
+| **Tools** | Safetica DLP, ESET, Kaspersky, FortiGate, FortiManager, FortiAnalyzer, PRTG, SecPoint |
+| **Infrastruktur** | Server, Storage (Synology NAS), Router, Switch, TCP/IP, SD-WAN, ASIC |
+| **Monitoring** | NOC Operations, Real-time Monitoring, Network Performance, Thermal & Power Management |
 | **Sistem Operasi** | Linux, Windows Server |
 
 ---
