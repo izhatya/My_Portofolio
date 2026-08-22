@@ -17,7 +17,7 @@ Saya adalah seorang profesional di bidang **network security** dengan pengalaman
 ## Pengalaman Kerja
 
 ### CV. Karya Jasa Mandiri | NOC Technician
-*Jun 2017 - Agu 2019 (2 thn 3 bln) | Pemalang, Jawa Tengah (Hybrid)*
+*Jun 2017 - Agu 2019 (2 thn 3 bln) | Pemalang, Jawa Tengah*
 
 - Memonitor metrik kinerja jaringan secara proaktif (penggunaan bandwidth, latensi, stabilitas link, dan network availability) untuk memastikan reliabilitas layanan.
 - Melakukan diagnosis dan penyelesaian masalah teknis pada perangkat core network, termasuk router, switch, firewall, dan perangkat nirkabel.
