@@ -1,5 +1,6 @@
 ---
-import { Viewport } from "astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
 import "../styles/global.css";
 ---
 
@@ -11,32 +12,19 @@ import "../styles/global.css";
     <title>{Astro.props.pageTitle || "My Portfolio"}</title>
     <meta name="description" content={Astro.props.description || ""} />
     <link rel="icon" href="/favicon.ico" />
-    <!-- Tambahkan CSS global -->
     <link rel="stylesheet" href="/styles/global.css" />
     <slot name="head" />
   </head>
   <body>
-    <!-- Header sederhana (tanpa Icon) -->
-    <header class="sticky top-0 z-50 w-full p-4 bg-white/90 dark:bg-[#0E0E11]/80 backdrop-blur-sm border-b dark:border-zinc-800">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="/" class="text-xl font-bold text-black dark:text-white">Home</a>
-        <nav class="flex gap-4">
-          <a href="/" class="text-black dark:text-white hover:text-mint-400">Home</a>
-          <a href="/about-me" class="text-black dark:text-white hover:text-mint-400">About</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Konten utama -->
+    <div class="blur-circle"></div>
+    <div style="background:linear-gradient(45deg, rgba(96, 250, 155, 0) 10.79%, rgba(96, 250, 170, 0.03) 40.92%, rgba(96, 250, 155, 0) 90.35%)" class="fixed top-0 left-0 w-full h-full pointer-events-none -z-1"></div>
+    
+    <Header />
+    
     <main class="min-h-[80vh]">
       <slot />
     </main>
-
-    <!-- Footer sederhana -->
-    <footer class="text-center py-4 border-t dark:border-zinc-800">
-      <p class="text-sm text-gray-500 dark:text-gray-400">
-        &copy; {new Date().getFullYear()} Izhatya Widad Audifa
-      </p>
-    </footer>
+    
+    <Footer />
   </body>
 </html>
