@@ -20,18 +20,26 @@ const navItems = ["home", "about"];
   <div
     class="relative mx-auto flex max-w-7xl flex-row items-center justify-between max-xl:px-6"
   >
-    <!-- Desktop Navigation -->
-    <div class="hidden md:block flex-1 text-center">
+    <!-- Navigasi Desktop (di tengah) -->
+    <div class="hidden md:flex flex-1 justify-center">
       <Navigation items={navItems} />
     </div>
 
-    <!-- Ikon sosial & toggle (desktop) -->
-    <div class="flex items-center gap-5 text-xl">
-      <div class="max-md:hidden flex items-center gap-5">
+    <!-- Bagian Kanan: Ikon sosial (desktop) + Theme + Hamburger -->
+    <div class="flex items-center justify-end gap-5 text-xl w-full md:w-auto">
+      <!-- Ikon sosial desktop (hidden di mobile) -->
+      <div
+        class="max-md:hidden flex items-center justify-center gap-5"
+        role="group"
+      >
         <Social link={github} iconName={githubIconName} />
         <Social link={linkedin} iconName={linkedinIconName} />
       </div>
+
+      <!-- Theme toggle -->
       <ThemeIcon />
+
+      <!-- Hamburger (hanya di mobile) -->
       <button
         id="hamburgerBtn"
         class="md:hidden text-2xl hover:text-mint-400 transition-all"
@@ -42,10 +50,10 @@ const navItems = ["home", "about"];
     </div>
   </div>
 
-  <!-- Mobile Navigation (slide down) -->
-  <div id="mobileNav" class="md:hidden hidden pt-4 border-t border-zinc-700 mt-2">
-    <a href="/" class="block py-2 px-4 text-center hover:text-mint-400 text-lg">Home</a>
-    <a href="/about-me" class="block py-2 px-4 text-center hover:text-mint-400 text-lg">About Me</a>
+  <!-- MOBILE MENU (muncul di bawah header) -->
+  <div id="mobileNav" class="md:hidden hidden pt-4 pb-2 border-t border-zinc-700 mt-2">
+    <a href="/" class="block py-3 px-4 text-center hover:text-mint-400 text-lg transition-colors">Home</a>
+    <a href="/about-me" class="block py-3 px-4 text-center hover:text-mint-400 text-lg transition-colors">About Me</a>
   </div>
 </header>
 
