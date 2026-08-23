@@ -20,22 +20,17 @@ const navItems = ["home", "about"];
   <div
     class="relative mx-auto flex max-w-7xl flex-row items-center justify-between max-xl:px-6"
   >
-    <!-- Navigasi Desktop -->
-    <div class="hidden md:flex">
+    <!-- Desktop Navigation -->
+    <div class="hidden md:block flex-1 text-center">
       <Navigation items={navItems} />
     </div>
 
-    <!-- Ikon sosial & toggle -->
-    <div class="flex items-center justify-between gap-5 text-xl">
-      <div
-        class="max-md:hidden flex items-center justify-center gap-5"
-        role="group"
-      >
+    <!-- Ikon sosial & toggle (desktop) -->
+    <div class="flex items-center gap-5 text-xl">
+      <div class="max-md:hidden flex items-center gap-5">
         <Social link={github} iconName={githubIconName} />
         <Social link={linkedin} iconName={linkedinIconName} />
       </div>
-    </div>
-    <div class="flex items-center gap-5 text-xl md:pl-5">
       <ThemeIcon />
       <button
         id="hamburgerBtn"
@@ -47,7 +42,7 @@ const navItems = ["home", "about"];
     </div>
   </div>
 
-  <!-- MOBILE MENU (sangat sederhana) -->
+  <!-- Mobile Navigation (slide down) -->
   <div id="mobileNav" class="md:hidden hidden pt-4 border-t border-zinc-700 mt-2">
     <a href="/" class="block py-2 px-4 text-center hover:text-mint-400 text-lg">Home</a>
     <a href="/about-me" class="block py-2 px-4 text-center hover:text-mint-400 text-lg">About Me</a>
