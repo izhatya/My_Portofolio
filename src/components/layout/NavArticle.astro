@@ -61,7 +61,6 @@ const { title } = Astro.props;
       if (el) sections.push({ id, el });
     });
 
-    // --- Fungsi update dengan IntersectionObserver ---
     function updateActiveLink(id) {
       links.forEach(link => {
         link.classList.remove('active');
@@ -71,7 +70,6 @@ const { title } = Astro.props;
       });
     }
 
-    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat ---
     const observer = new IntersectionObserver((entries) => {
       let visibleId = null;
       for (const entry of entries) {
@@ -84,7 +82,7 @@ const { title } = Astro.props;
         updateActiveLink(visibleId);
       }
     }, {
-      rootMargin: '-20% 0px -30% 0px', // aktif saat elemen di 20%-30% viewport
+      rootMargin: '-20% 0px -30% 0px',
       threshold: 0
     });
 
@@ -92,24 +90,18 @@ const { title } = Astro.props;
       observer.observe(el);
     });
 
-    // --- Update saat klik link (manual navigation) ---
     links.forEach(link => {
       link.addEventListener('click', function(e) {
-        // Ambil ID dari href
         const href = this.getAttribute('href');
         const id = href.replace('#', '');
-        // Update langsung tanpa menunggu scroll (agar tidak glitch)
         updateActiveLink(id);
-        // Tetap biarkan browser melakukan scroll
       });
     });
 
-    // --- Fallback: update saat scroll (untuk mengantisipasi) ---
     let ticking = false;
     window.addEventListener('scroll', function() {
       if (!ticking) {
         window.requestAnimationFrame(function() {
-          // Ambil elemen yang paling dekat dengan viewport
           let bestId = null;
           let bestTop = -Infinity;
           const offset = 150;
@@ -129,8 +121,6 @@ const { title } = Astro.props;
       }
     }, { passive: true });
 
-    // --- Update awal ---
-    // Cari section pertama yang terlihat
     let firstId = sections[0]?.id || 'ringkasan';
     for (const { id, el } of sections) {
       const rect = el.getBoundingClientRect();
