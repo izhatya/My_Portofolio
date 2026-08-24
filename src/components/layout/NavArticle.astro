@@ -35,50 +35,71 @@ const { title } = Astro.props;
   </div>
 </div>
 
-<!-- CSS untuk highlight link aktif -->
 <style>
+  /* Gaya aktif untuk link yang sedang di-scroll atau di-klik */
   .toc-link.active {
-    color: #6ce9b7 !important;
-    border-left-color: #6ce9b7 !important;
-    font-weight: 600 !important;
+    @apply text-mint-500 dark:text-mint-400 border-mint-400 font-semibold;
   }
-  .dark .toc-link.active {
-    color: #6ce9b7 !important;
-    border-left-color: #6ce9b7 !important;
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
   }
 </style>
 
-<!-- JavaScript untuk scroll highlight -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll(".toc-link");
+    const links = document.querySelectorAll('.toc-link');
     const sections = [];
-    links.forEach(link => {
-      const target = document.querySelector(link.getAttribute("href"));
-      if (target) sections.push({ link, target });
+    // Daftar ID yang sesuai dengan heading di about-me.md
+    const ids = ['ringkasan', 'pengalaman-kerja', 'sertifikasi--lisensi', 'keahlian-teknis', 'proyek', 'volunteering', 'kontak'];
+    
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) sections.push({ id, el });
     });
 
     function updateActiveLink() {
-      let current = null;
-      const scrollY = window.scrollY + 100; // offset untuk sticky header
+      let currentId = null;
+      // Cari section yang sedang terlihat di viewport
+      for (let i = 0; i < sections.length; i++) {
+        const rect = sections[i].el.getBoundingClientRect();
+        // Jika bagian atas section sudah melewati 100px dari atas viewport
+        if (rect.top <= 100) {
+          currentId = sections[i].id;
+        } else {
+          break;
+        }
+      }
+      // Jika tidak ada yang terlihat, gunakan yang pertama
+      if (!currentId && sections.length > 0) {
+        currentId = sections[0].id;
+      }
 
-      sections.forEach(({ link, target }) => {
-        const rect = target.getBoundingClientRect();
-        const top = rect.top + window.scrollY;
-        if (scrollY >= top) {
-          current = link;
+      // Update class active pada link
+      links.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentId) {
+          link.classList.add('active');
         }
       });
-
-      links.forEach(link => link.classList.remove("active"));
-      if (current) {
-        current.classList.add("active");
-      }
     }
 
-    // Update saat scroll
-    window.addEventListener("scroll", updateActiveLink);
-    // Update saat load
+    // Jalankan pertama kali
     updateActiveLink();
+
+    // Jalankan saat scroll
+    window.addEventListener('scroll', updateActiveLink, { passive: true });
+
+    // Jalankan saat resize
+    window.addEventListener('resize', updateActiveLink, { passive: true });
+
+    // Klik link: update active setelah klik (untuk mengatasi jika scroll tidak berubah)
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Biarkan navigasi default
+        // Setelah klik, kita update active setelah sedikit delay agar posisi scroll stabil
+        setTimeout(updateActiveLink, 100);
+      });
+    });
   });
 </script>
