@@ -2,7 +2,7 @@
 const { title } = Astro.props;
 ---
 
-<!-- Sidebar Table of Contents -->
+<!-- Sidebar Table of Contents - muncul di layar ≥ 1024px (desktop) -->
 <div class="hidden lg:block w-72 flex-shrink-0">
   <div class="sticky top-24 bg-white dark:bg-zinc-900 rounded-2xl border border-neutral-200 dark:border-zinc-700 shadow-lg p-6">
     <h3 class="text-sm font-bold uppercase tracking-wider text-black/60 dark:text-zinc-400 mb-4 flex items-center gap-2">
@@ -17,7 +17,7 @@ const { title } = Astro.props;
         Pengalaman Kerja
       </a>
       <a href="#sertifikasi--lisensi" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
-        Sertifikasi & Lisensi
+        Sertifikasi &amp; Lisensi
       </a>
       <a href="#keahlian-teknis" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Keahlian Teknis
@@ -36,18 +36,16 @@ const { title } = Astro.props;
 </div>
 
 <style>
-  /* Gaya aktif untuk link yang sedang di-scroll atau di-klik */
+  /* Gaya aktif: border kiri hijau + teks hijau + bold */
   .toc-link.active {
-    color: #6ce9b7; /* mint-500 */
-    border-left-color: #6ce9b7;
-    font-weight: 600;
+    color: #6ce9b7 !important;
+    border-left-color: #6ce9b7 !important;
+    font-weight: 600 !important;
   }
-  /* Dark mode */
   .dark .toc-link.active {
-    color: #6ce9b7; /* mint-400 di dark */
-    border-left-color: #6ce9b7;
+    color: #6ce9b7 !important;
+    border-left-color: #6ce9b7 !important;
   }
-  /* Smooth scroll */
   html {
     scroll-behavior: smooth;
   }
@@ -66,14 +64,23 @@ const { title } = Astro.props;
 
     function updateActiveLink() {
       let currentId = null;
+      let minTop = Infinity;
+      const offset = 120; // offset dari atas viewport
+
       for (let i = 0; i < sections.length; i++) {
         const rect = sections[i].el.getBoundingClientRect();
-        if (rect.top <= 100) {
-          currentId = sections[i].id;
-        } else {
-          break;
+        const top = rect.top;
+        // Cari section yang paling dekat dengan offset dari atas, tapi masih di atas/bawah offset
+        if (top <= offset) {
+          // Ambil yang posisi top-nya paling mendekati offset (nilai top terbesar di bawah offset)
+          if (top > -200 && top < minTop) {
+            minTop = top;
+            currentId = sections[i].id;
+          }
         }
       }
+
+      // Jika tidak ada yang cocok, gunakan section pertama
       if (!currentId && sections.length > 0) {
         currentId = sections[0].id;
       }
@@ -86,13 +93,19 @@ const { title } = Astro.props;
       });
     }
 
+    // Jalankan pertama kali
     updateActiveLink();
+
+    // Jalankan saat scroll
     window.addEventListener('scroll', updateActiveLink, { passive: true });
+
+    // Jalankan saat resize
     window.addEventListener('resize', updateActiveLink, { passive: true });
 
+    // Saat link di-klik, update active setelah scroll selesai
     links.forEach(link => {
       link.addEventListener('click', function(e) {
-        setTimeout(updateActiveLink, 100);
+        setTimeout(updateActiveLink, 150);
       });
     });
   });
