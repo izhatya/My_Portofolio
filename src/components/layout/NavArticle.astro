@@ -36,15 +36,16 @@ const { title } = Astro.props;
 </div>
 
 <style>
-  .toc-link.active {
-    color: #6ce9b7 !important;
-    border-left-color: #6ce9b7 !important;
-    font-weight: 600 !important;
+  /* Efek glow permanen untuk semua link TOC */
+  .toc-link {
+    text-shadow: 0 0 8px rgba(96, 250, 155, 0.3), 0 0 20px rgba(96, 250, 155, 0.1);
+    transition: all 0.2s ease;
   }
-  .dark .toc-link.active {
-    color: #6ce9b7 !important;
-    border-left-color: #6ce9b7 !important;
+  /* Hover hanya memperkuat glow, tidak mengubah warna */
+  .toc-link:hover {
+    text-shadow: 0 0 12px rgba(96, 250, 155, 0.6), 0 0 30px rgba(96, 250, 155, 0.3);
   }
+  /* Tidak ada perubahan warna aktif (class active hanya untuk logika internal) */
   html {
     scroll-behavior: smooth;
   }
@@ -61,30 +62,22 @@ const { title } = Astro.props;
       if (el) sections.push({ id, el });
     });
 
-    // --- Fungsi update dengan IntersectionObserver ---
+    // --- Fungsi update hanya untuk logika internal (tidak ada perubahan visual) ---
     function updateActiveLink(id) {
-      links.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + id) {
-          link.classList.add('active');
-        }
-      });
+      // Tidak ada perubahan warna pada link
+      // Hanya untuk konsistensi data jika diperlukan
     }
 
-    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat ---
+    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat (tanpa efek visual) ---
     const observer = new IntersectionObserver((entries) => {
-      let visibleId = null;
       for (const entry of entries) {
         if (entry.isIntersecting) {
-          visibleId = entry.target.id;
+          // Tidak ada perubahan warna
           break;
         }
       }
-      if (visibleId) {
-        updateActiveLink(visibleId);
-      }
     }, {
-      rootMargin: '-20% 0px -30% 0px', // aktif saat elemen di 20%-30% viewport
+      rootMargin: '-20% 0px -30% 0px',
       threshold: 0
     });
 
@@ -92,53 +85,17 @@ const { title } = Astro.props;
       observer.observe(el);
     });
 
-    // --- Update saat klik link (manual navigation) ---
+    // --- Klik link tetap berfungsi (tanpa perubahan warna) ---
     links.forEach(link => {
       link.addEventListener('click', function(e) {
-        // Ambil ID dari href
-        const href = this.getAttribute('href');
-        const id = href.replace('#', '');
-        // Update langsung tanpa menunggu scroll (agar tidak glitch)
-        updateActiveLink(id);
-        // Tetap biarkan browser melakukan scroll
+        // Navigasi default berjalan
+        // Tidak ada perubahan warna
       });
     });
 
-    // --- Fallback: update saat scroll (untuk mengantisipasi) ---
-    let ticking = false;
+    // --- Fallback scroll (tanpa perubahan warna) ---
     window.addEventListener('scroll', function() {
-      if (!ticking) {
-        window.requestAnimationFrame(function() {
-          // Ambil elemen yang paling dekat dengan viewport
-          let bestId = null;
-          let bestTop = -Infinity;
-          const offset = 150;
-          sections.forEach(({ id, el }) => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top <= offset && rect.top > bestTop) {
-              bestTop = rect.top;
-              bestId = id;
-            }
-          });
-          if (bestId) {
-            updateActiveLink(bestId);
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
+      // Tidak ada perubahan warna
     }, { passive: true });
-
-    // --- Update awal ---
-    // Cari section pertama yang terlihat
-    let firstId = sections[0]?.id || 'ringkasan';
-    for (const { id, el } of sections) {
-      const rect = el.getBoundingClientRect();
-      if (rect.top <= 200) {
-        firstId = id;
-        break;
-      }
-    }
-    updateActiveLink(firstId);
   });
 </script>
