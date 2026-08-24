@@ -10,25 +10,25 @@ const { title } = Astro.props;
       Table of Contents
     </h3>
     <nav class="space-y-0.5" id="toc-nav">
-      <a href="#ringkasan" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#ringkasan" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Ringkasan
       </a>
-      <a href="#pengalaman-kerja" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#pengalaman-kerja" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Pengalaman Kerja
       </a>
-      <a href="#sertifikasi--lisensi" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#sertifikasi--lisensi" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Sertifikasi &amp; Lisensi
       </a>
-      <a href="#keahlian-teknis" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#keahlian-teknis" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Keahlian Teknis
       </a>
-      <a href="#proyek" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#proyek" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Proyek
       </a>
-      <a href="#volunteering" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#volunteering" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Volunteering
       </a>
-      <a href="#kontak" class="toc-link block text-sm text-black/70 dark:text-zinc-300 transition-colors py-1.5 pl-3 border-l-2 border-transparent">
+      <a href="#kontak" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Kontak
       </a>
     </nav>
@@ -36,31 +36,10 @@ const { title } = Astro.props;
 </div>
 
 <style>
-  /* SEMUA link TOC tebal permanen (font-weight: 600) */
-  .toc-link {
-    font-weight: 600 !important; /* tebal semua */
-    text-shadow: 0 0 8px rgba(96, 250, 155, 0.3), 0 0 20px rgba(96, 250, 155, 0.1);
-    transition: text-shadow 0.2s ease, color 0.2s ease;
-  }
-  /* Dark mode: warna default */
-  .dark .toc-link {
-    color: rgb(212, 212, 216) !important; /* zinc-300 */
-  }
-  /* Light mode: warna default */
-  .toc-link {
-    color: rgba(0, 0, 0, 0.7) !important; /* black/70 */
-  }
-  /* Hover: hanya memperkuat glow, tidak mengubah warna */
-  .toc-link:hover {
-    text-shadow: 0 0 12px rgba(96, 250, 155, 0.6), 0 0 30px rgba(96, 250, 155, 0.3);
-    color: inherit !important;
-  }
-  /* Aktif: tidak ada perubahan font-weight (tetap tebal), hanya warna hijau */
   .toc-link.active {
     color: #6ce9b7 !important;
     border-left-color: #6ce9b7 !important;
-    font-weight: 600 !important; /* tetap tebal */
-    text-shadow: 0 0 8px rgba(96, 250, 155, 0.3), 0 0 20px rgba(96, 250, 155, 0.1) !important;
+    font-weight: 600 !important;
   }
   .dark .toc-link.active {
     color: #6ce9b7 !important;
@@ -82,6 +61,7 @@ const { title } = Astro.props;
       if (el) sections.push({ id, el });
     });
 
+    // --- Fungsi update dengan IntersectionObserver ---
     function updateActiveLink(id) {
       links.forEach(link => {
         link.classList.remove('active');
@@ -91,6 +71,7 @@ const { title } = Astro.props;
       });
     }
 
+    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat ---
     const observer = new IntersectionObserver((entries) => {
       let visibleId = null;
       for (const entry of entries) {
@@ -103,7 +84,7 @@ const { title } = Astro.props;
         updateActiveLink(visibleId);
       }
     }, {
-      rootMargin: '-20% 0px -30% 0px',
+      rootMargin: '-20% 0px -30% 0px', // aktif saat elemen di 20%-30% viewport
       threshold: 0
     });
 
@@ -111,18 +92,24 @@ const { title } = Astro.props;
       observer.observe(el);
     });
 
+    // --- Update saat klik link (manual navigation) ---
     links.forEach(link => {
       link.addEventListener('click', function(e) {
+        // Ambil ID dari href
         const href = this.getAttribute('href');
         const id = href.replace('#', '');
+        // Update langsung tanpa menunggu scroll (agar tidak glitch)
         updateActiveLink(id);
+        // Tetap biarkan browser melakukan scroll
       });
     });
 
+    // --- Fallback: update saat scroll (untuk mengantisipasi) ---
     let ticking = false;
     window.addEventListener('scroll', function() {
       if (!ticking) {
         window.requestAnimationFrame(function() {
+          // Ambil elemen yang paling dekat dengan viewport
           let bestId = null;
           let bestTop = -Infinity;
           const offset = 150;
@@ -142,6 +129,8 @@ const { title } = Astro.props;
       }
     }, { passive: true });
 
+    // --- Update awal ---
+    // Cari section pertama yang terlihat
     let firstId = sections[0]?.id || 'ringkasan';
     for (const { id, el } of sections) {
       const rect = el.getBoundingClientRect();
