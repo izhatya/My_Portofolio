@@ -9,7 +9,7 @@ const { title } = Astro.props;
       <span class="w-1 h-5 bg-mint-400 rounded-full"></span>
       Table of Contents
     </h3>
-    <nav class="space-y-0.5">
+    <nav class="space-y-0.5" id="toc-nav">
       <a href="#ringkasan" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Ringkasan
       </a>
@@ -36,17 +36,109 @@ const { title } = Astro.props;
 </div>
 
 <style>
-  /* Efek glow tetap menyala untuk semua link (seperti menu aktif) */
-  .toc-link {
-    text-shadow: 0 0 8px rgba(96, 250, 155, 0.3), 0 0 20px rgba(96, 250, 155, 0.1);
-    transition: all 0.2s ease;
+  .toc-link.active {
+    color: #6ce9b7 !important;
+    border-left-color: #6ce9b7 !important;
+    font-weight: 600 !important;
   }
-  /* Hover tetap ada (warna berubah, glow bertambah) */
-  .toc-link:hover {
-    text-shadow: 0 0 12px rgba(96, 250, 155, 0.6), 0 0 30px rgba(96, 250, 155, 0.3);
+  .dark .toc-link.active {
+    color: #6ce9b7 !important;
+    border-left-color: #6ce9b7 !important;
   }
-  /* Tidak ada perubahan warna permanen */
   html {
     scroll-behavior: smooth;
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.toc-link');
+    const sections = [];
+    const ids = ['ringkasan', 'pengalaman-kerja', 'sertifikasi--lisensi', 'keahlian-teknis', 'proyek', 'volunteering', 'kontak'];
+    
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) sections.push({ id, el });
+    });
+
+    // --- Fungsi update dengan IntersectionObserver ---
+    function updateActiveLink(id) {
+      links.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + id) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat ---
+    const observer = new IntersectionObserver((entries) => {
+      let visibleId = null;
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          visibleId = entry.target.id;
+          break;
+        }
+      }
+      if (visibleId) {
+        updateActiveLink(visibleId);
+      }
+    }, {
+      rootMargin: '-20% 0px -30% 0px', // aktif saat elemen di 20%-30% viewport
+      threshold: 0
+    });
+
+    sections.forEach(({ el }) => {
+      observer.observe(el);
+    });
+
+    // --- Update saat klik link (manual navigation) ---
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Ambil ID dari href
+        const href = this.getAttribute('href');
+        const id = href.replace('#', '');
+        // Update langsung tanpa menunggu scroll (agar tidak glitch)
+        updateActiveLink(id);
+        // Tetap biarkan browser melakukan scroll
+      });
+    });
+
+    // --- Fallback: update saat scroll (untuk mengantisipasi) ---
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          // Ambil elemen yang paling dekat dengan viewport
+          let bestId = null;
+          let bestTop = -Infinity;
+          const offset = 150;
+          sections.forEach(({ id, el }) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= offset && rect.top > bestTop) {
+              bestTop = rect.top;
+              bestId = id;
+            }
+          });
+          if (bestId) {
+            updateActiveLink(bestId);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // --- Update awal ---
+    // Cari section pertama yang terlihat
+    let firstId = sections[0]?.id || 'ringkasan';
+    for (const { id, el } of sections) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= 200) {
+        firstId = id;
+        break;
+      }
+    }
+    updateActiveLink(firstId);
+  });
+</script>
