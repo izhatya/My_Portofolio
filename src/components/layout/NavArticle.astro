@@ -2,7 +2,7 @@
 const { title } = Astro.props;
 ---
 
-<!-- Sidebar Table of Contents - muncul di layar ≥ 1024px (desktop) -->
+<!-- Sidebar Table of Contents -->
 <div class="hidden lg:block w-72 flex-shrink-0">
   <div class="sticky top-24 bg-white dark:bg-zinc-900 rounded-2xl border border-neutral-200 dark:border-zinc-700 shadow-lg p-6">
     <h3 class="text-sm font-bold uppercase tracking-wider text-black/60 dark:text-zinc-400 mb-4 flex items-center gap-2">
@@ -36,7 +36,6 @@ const { title } = Astro.props;
 </div>
 
 <style>
-  /* Gaya aktif: border kiri hijau + teks hijau + bold */
   .toc-link.active {
     color: #6ce9b7 !important;
     border-left-color: #6ce9b7 !important;
@@ -62,51 +61,84 @@ const { title } = Astro.props;
       if (el) sections.push({ id, el });
     });
 
-    function updateActiveLink() {
-      let currentId = null;
-      let minTop = Infinity;
-      const offset = 120; // offset dari atas viewport
-
-      for (let i = 0; i < sections.length; i++) {
-        const rect = sections[i].el.getBoundingClientRect();
-        const top = rect.top;
-        // Cari section yang paling dekat dengan offset dari atas, tapi masih di atas/bawah offset
-        if (top <= offset) {
-          // Ambil yang posisi top-nya paling mendekati offset (nilai top terbesar di bawah offset)
-          if (top > -200 && top < minTop) {
-            minTop = top;
-            currentId = sections[i].id;
-          }
-        }
-      }
-
-      // Jika tidak ada yang cocok, gunakan section pertama
-      if (!currentId && sections.length > 0) {
-        currentId = sections[0].id;
-      }
-
+    // --- Fungsi update dengan IntersectionObserver ---
+    function updateActiveLink(id) {
       links.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + currentId) {
+        if (link.getAttribute('href') === '#' + id) {
           link.classList.add('active');
         }
       });
     }
 
-    // Jalankan pertama kali
-    updateActiveLink();
+    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat ---
+    const observer = new IntersectionObserver((entries) => {
+      let visibleId = null;
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          visibleId = entry.target.id;
+          break;
+        }
+      }
+      if (visibleId) {
+        updateActiveLink(visibleId);
+      }
+    }, {
+      rootMargin: '-20% 0px -30% 0px', // aktif saat elemen di 20%-30% viewport
+      threshold: 0
+    });
 
-    // Jalankan saat scroll
-    window.addEventListener('scroll', updateActiveLink, { passive: true });
+    sections.forEach(({ el }) => {
+      observer.observe(el);
+    });
 
-    // Jalankan saat resize
-    window.addEventListener('resize', updateActiveLink, { passive: true });
-
-    // Saat link di-klik, update active setelah scroll selesai
+    // --- Update saat klik link (manual navigation) ---
     links.forEach(link => {
       link.addEventListener('click', function(e) {
-        setTimeout(updateActiveLink, 150);
+        // Ambil ID dari href
+        const href = this.getAttribute('href');
+        const id = href.replace('#', '');
+        // Update langsung tanpa menunggu scroll (agar tidak glitch)
+        updateActiveLink(id);
+        // Tetap biarkan browser melakukan scroll
       });
     });
+
+    // --- Fallback: update saat scroll (untuk mengantisipasi) ---
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          // Ambil elemen yang paling dekat dengan viewport
+          let bestId = null;
+          let bestTop = -Infinity;
+          const offset = 150;
+          sections.forEach(({ id, el }) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= offset && rect.top > bestTop) {
+              bestTop = rect.top;
+              bestId = id;
+            }
+          });
+          if (bestId) {
+            updateActiveLink(bestId);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // --- Update awal ---
+    // Cari section pertama yang terlihat
+    let firstId = sections[0]?.id || 'ringkasan';
+    for (const { id, el } of sections) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= 200) {
+        firstId = id;
+        break;
+      }
+    }
+    updateActiveLink(firstId);
   });
 </script>
