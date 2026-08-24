@@ -9,26 +9,26 @@ const { title } = Astro.props;
       <span class="w-1 h-5 bg-mint-400 rounded-full"></span>
       Table of Contents
     </h3>
-    <nav class="space-y-0.5" id="toc-nav">
-      <a href="#ringkasan" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+    <nav class="space-y-0.5">
+      <a href="#ringkasan" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Ringkasan
       </a>
-      <a href="#pengalaman-kerja" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+      <a href="#pengalaman-kerja" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Pengalaman Kerja
       </a>
-      <a href="#sertifikasi--lisensi" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+      <a href="#sertifikasi--lisensi" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Sertifikasi &amp; Lisensi
       </a>
-      <a href="#keahlian-teknis" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+      <a href="#keahlian-teknis" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Keahlian Teknis
       </a>
-      <a href="#proyek" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+      <a href="#proyek" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Proyek
       </a>
-      <a href="#volunteering" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+      <a href="#volunteering" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Volunteering
       </a>
-      <a href="#kontak" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+      <a href="#kontak" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Kontak
       </a>
     </nav>
@@ -36,109 +36,8 @@ const { title } = Astro.props;
 </div>
 
 <style>
-  .toc-link.active {
-    color: #6ce9b7 !important;
-    border-left-color: #6ce9b7 !important;
-    font-weight: 600 !important;
-  }
-  .dark .toc-link.active {
-    color: #6ce9b7 !important;
-    border-left-color: #6ce9b7 !important;
-  }
   html {
     scroll-behavior: smooth;
   }
+  /* Semua link tetap konsisten, tidak ada perubahan warna permanen */
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('.toc-link');
-    const sections = [];
-    const ids = ['ringkasan', 'pengalaman-kerja', 'sertifikasi--lisensi', 'keahlian-teknis', 'proyek', 'volunteering', 'kontak'];
-    
-    ids.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) sections.push({ id, el });
-    });
-
-    // --- Fungsi update dengan IntersectionObserver ---
-    function updateActiveLink(id) {
-      links.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + id) {
-          link.classList.add('active');
-        }
-      });
-    }
-
-    // --- IntersectionObserver untuk mendeteksi bagian yang terlihat ---
-    const observer = new IntersectionObserver((entries) => {
-      let visibleId = null;
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          visibleId = entry.target.id;
-          break;
-        }
-      }
-      if (visibleId) {
-        updateActiveLink(visibleId);
-      }
-    }, {
-      rootMargin: '-20% 0px -30% 0px', // aktif saat elemen di 20%-30% viewport
-      threshold: 0
-    });
-
-    sections.forEach(({ el }) => {
-      observer.observe(el);
-    });
-
-    // --- Update saat klik link (manual navigation) ---
-    links.forEach(link => {
-      link.addEventListener('click', function(e) {
-        // Ambil ID dari href
-        const href = this.getAttribute('href');
-        const id = href.replace('#', '');
-        // Update langsung tanpa menunggu scroll (agar tidak glitch)
-        updateActiveLink(id);
-        // Tetap biarkan browser melakukan scroll
-      });
-    });
-
-    // --- Fallback: update saat scroll (untuk mengantisipasi) ---
-    let ticking = false;
-    window.addEventListener('scroll', function() {
-      if (!ticking) {
-        window.requestAnimationFrame(function() {
-          // Ambil elemen yang paling dekat dengan viewport
-          let bestId = null;
-          let bestTop = -Infinity;
-          const offset = 150;
-          sections.forEach(({ id, el }) => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top <= offset && rect.top > bestTop) {
-              bestTop = rect.top;
-              bestId = id;
-            }
-          });
-          if (bestId) {
-            updateActiveLink(bestId);
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }, { passive: true });
-
-    // --- Update awal ---
-    // Cari section pertama yang terlihat
-    let firstId = sections[0]?.id || 'ringkasan';
-    for (const { id, el } of sections) {
-      const rect = el.getBoundingClientRect();
-      if (rect.top <= 200) {
-        firstId = id;
-        break;
-      }
-    }
-    updateActiveLink(firstId);
-  });
-</script>
