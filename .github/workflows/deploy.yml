@@ -1,45 +1,89 @@
-name: Deploy to GitHub Pages
+---
+const { title } = Astro.props;
+---
 
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+<!-- Sidebar Table of Contents - muncul di layar ≥ 1024px -->
+<div class="hidden lg:block w-72 flex-shrink-0">
+  <div class="sticky top-24 bg-white dark:bg-zinc-900 rounded-2xl border border-neutral-200 dark:border-zinc-700 shadow-lg p-6">
+    <h3 class="text-sm font-bold uppercase tracking-wider text-black/60 dark:text-zinc-400 mb-4 flex items-center gap-2">
+      <span class="w-1 h-5 bg-mint-400 rounded-full"></span>
+      Table of Contents
+    </h3>
+    <nav class="space-y-0.5" id="tocNav">
+      <a href="#ringkasan" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Ringkasan
+      </a>
+      <a href="#pengalaman-kerja" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Pengalaman Kerja
+      </a>
+      <a href="#sertifikasi--lisensi" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Sertifikasi & Lisensi
+      </a>
+      <a href="#keahlian-teknis" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Keahlian Teknis
+      </a>
+      <a href="#proyek" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Proyek
+      </a>
+      <a href="#volunteering" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Volunteering
+      </a>
+      <a href="#kontak" class="toc-link block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
+        Kontak
+      </a>
+    </nav>
+  </div>
+</div>
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".toc-link");
+    const sections = document.querySelectorAll("h2, h3"); // target semua heading yang punya id
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    // Fungsi untuk menghapus highlight dari semua link
+    function removeHighlight() {
+      links.forEach(link => {
+        link.classList.remove("text-mint-500", "dark:text-mint-400", "border-mint-400", "font-semibold");
+        link.classList.add("border-transparent");
+      });
+    }
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
+    // Fungsi untuk menambahkan highlight ke link yang sesuai
+    function highlightLink(id) {
+      removeHighlight();
+      links.forEach(link => {
+        if (link.getAttribute("href") === "#" + id) {
+          link.classList.add("text-mint-500", "dark:text-mint-400", "border-mint-400", "font-semibold");
+          link.classList.remove("border-transparent");
+        }
+      });
+    }
 
-      - name: Install dependencies
-        run: npm install
+    // Saat halaman di-scroll, deteksi heading mana yang terlihat
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          if (id) highlightLink(id);
+        }
+      });
+    }, { rootMargin: "-20% 0px -35% 0px" });
 
-      - name: Build
-        run: npm run build
+    sections.forEach(section => {
+      if (section.id) observer.observe(section);
+    });
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    // Saat link diklik, scroll ke heading dan highlight langsung
+    links.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          highlightLink(targetId);
+        }
+      });
+    });
+  });
+</script>
