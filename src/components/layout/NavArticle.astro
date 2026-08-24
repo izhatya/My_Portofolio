@@ -2,31 +2,33 @@
 const { title } = Astro.props;
 ---
 
-<div class="max-xl:hidden sticky top-24 w-72 h-fit">
-  <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-neutral-100 dark:border-zinc-800 shadow-sm p-6">
-    <h3 class="text-sm font-bold uppercase tracking-wide text-black/60 dark:text-zinc-400 mb-4">
+<!-- Sidebar Table of Contents - muncul di layar ≥ 1024px (desktop) -->
+<div class="hidden lg:block w-72 flex-shrink-0">
+  <div class="sticky top-24 bg-white dark:bg-zinc-900 rounded-2xl border border-neutral-200 dark:border-zinc-700 shadow-lg p-6">
+    <h3 class="text-sm font-bold uppercase tracking-wider text-black/60 dark:text-zinc-400 mb-4 flex items-center gap-2">
+      <span class="w-1 h-5 bg-mint-400 rounded-full"></span>
       Table of Contents
     </h3>
-    <nav class="space-y-1">
-      <a href="#ringkasan" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+    <nav class="space-y-0.5">
+      <a href="#ringkasan" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Ringkasan
       </a>
-      <a href="#pengalaman-kerja" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+      <a href="#pengalaman-kerja" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Pengalaman Kerja
       </a>
-      <a href="#sertifikasi--lisensi" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+      <a href="#sertifikasi--lisensi" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Sertifikasi & Lisensi
       </a>
-      <a href="#keahlian-teknis" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+      <a href="#keahlian-teknis" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Keahlian Teknis
       </a>
-      <a href="#proyek" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+      <a href="#proyek" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Proyek
       </a>
-      <a href="#volunteering" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+      <a href="#volunteering" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Volunteering
       </a>
-      <a href="#kontak" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1 border-l-2 border-transparent hover:border-mint-400 pl-3">
+      <a href="#kontak" class="block text-sm text-black/70 dark:text-zinc-300 hover:text-mint-500 dark:hover:text-mint-400 transition-colors py-1.5 pl-3 border-l-2 border-transparent hover:border-mint-400">
         Kontak
       </a>
     </nav>
