@@ -158,7 +158,7 @@ Bertanggung jawab penuh sebagai Engineer On-Site dalam mengelola, memonitor, dan
 
 ## Kontak
 
-- **Email**: [izhatyaaudifa123@gmail.com](mailto:izhatyaaudifa123@gmail.com)
+- **Email**: [sukensibatosay05@gmail.com](mailto:sukensibatosay05@gmail.com)
 - **LinkedIn**: [linkedin.com/in/izhatya](https://www.linkedin.com/in/izhatya)
 - **GitHub**: [github.com/izhatya](https://github.com/izhatya)
 - **Instagram**: [instagram.com/i_zhaat](https://www.instagram.com/i_zhaat)
